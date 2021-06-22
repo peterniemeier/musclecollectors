@@ -1,0 +1,221 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.tab-list {  border-bottom: 1px solid #ccc;
+  padding-left: 0;
+}
+
+.tab-list-item {
+  display: inline-block;
+  list-style: none;
+  margin-bottom: -1px;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+}
+
+.tab-list-active {
+  background-color: white;
+  border: solid #ccc;
+  border-width: 1px 1px 0 1px;
+}
+
+.tabs {
+
+}
+
+.individualMuscleData {
+  justify-content: center;
+  margin-right: 15px;
+  border-width: 2px;
+  /* margin-left: 10px; */
+  margin-bottom: -160px;
+}
+
+.individualMuscleDataNoColorOrClassData {
+  justify-content: center;
+  margin-right: 15px;
+  border-width: 2px;
+  margin-bottom: -40px;
+}
+
+.classDataOne {
+  position: relative;
+  top: -40px;
+  margin-bottom: 80px;
+}
+
+.classDataTwo {
+  position: relative;
+  top: -80px;
+  margin-bottom: 40px;
+}
+
+.classDataThree {
+  position: relative;
+  top: -120px;
+}
+
+.classDataLineItem {
+  text-align: left;
+}
+
+.classificationNumber {
+  position: relative;
+  top: 60px;
+  left: -60px;
+}
+
+.classControls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.colorsByClass {
+  display: flex;
+  text-align: left;
+
+}
+
+.colorControls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#circlePurple {
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: #933fcb;
+}
+
+#circleGrape {
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: #da6ee1;
+}
+
+#circleMagenta {
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: #e63291;
+}
+
+#circleGreen {
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: #a9df3d;
+}
+
+#circleOrange {
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: #fbac2a;
+}
+
+#circleLightBlue {
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: #23c8ee;
+}
+
+#circleBlue {
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: #145b90;
+}
+
+#circleRed {
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: #eb251a;
+}
+
+#circleFlesh {
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: #f0cebc;
+}
+
+#circleSalmon {
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: #f28360;
+}
+
+.individualColor {
+  list-style-type: none;
+  text-align: left;
+}
+
+.allMuscleData {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
