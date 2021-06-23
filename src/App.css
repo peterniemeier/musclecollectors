@@ -69,6 +69,10 @@ form {
   margin-left: 10px;
 }
 
+#credit {
+  font-size: 10%;
+}
+
 .individualMuscleData {
   justify-content: center;
   margin-right: 15px;
