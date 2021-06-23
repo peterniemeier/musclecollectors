@@ -59,10 +59,14 @@
 
 }
 
+#widgets {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 form {
-  position: fixed;
-  top: 15px;
-  right: 15px;
+  margin-left: 10px;
 }
 
 .individualMuscleData {

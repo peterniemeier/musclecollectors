@@ -237,7 +237,14 @@ class MuscleContainer extends Component{
               <br></br>
               <input id="searchCriteriaValue" type="text" value={this.props.searchCriteria} onChange={this.handleSearchCriteriaChange} />
               <br></br>
-              <input type="button" value="Copy search critera to clipboard" onClick={this.copySearchCritera} />
+              <div id="widgets">
+                <input type="button" value="Copy search critera to clipboard" onClick={this.copySearchCritera} />
+                  <form action="https://www.paypal.com/donate" method="post" target="_top">
+                  <input type="hidden" name="hosted_button_id" value="JQMDXHFFH9SNL" />
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                  <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                  </form>
+              </div>
               <br></br>
               <div class="colorControls">
                 <div class="flesh colorbox" title="Flesh">
@@ -349,11 +356,6 @@ class MuscleContainer extends Component{
                 </div>
               </div>
               <br></br>
-              <form action="https://www.paypal.com/donate" method="post" target="_top">
-              <input type="hidden" name="hosted_button_id" value="JQMDXHFFH9SNL" />
-              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-              <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-              </form>
             </div>
             <div class="allMuscleData">
               {allMuscleFigures}
