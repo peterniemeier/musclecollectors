@@ -218,12 +218,12 @@ class MuscleContainer extends Component{
         if (displayMuscle) {
           let direction = this.state.displayDirection ? "b" : "a";
 
-          allMuscleFigures.push(<div class="individualMuscleData">
+          allMuscleFigures.push(<div class="individualMuscleData" title={muscleData[k].name}>
             <div class="classificationNumber">{k}</div>
             <br></br>
             {/*}{muscleData[k].name}*/}
             <br></br>
-            <img src={process.env.PUBLIC_URL + '/images/web/pngs/'+k+direction+'.png'} width="150px" height="150px" title={muscleData[k].name} alt="nope"/>
+            <img src={process.env.PUBLIC_URL + '/images/web/pngs/'+k+direction+'.png'} width="150px" height="150px" alt="nope"/>
             <div class={`${classDataSpacing}`}>
               {classData}
             </div>
