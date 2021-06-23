@@ -240,40 +240,35 @@ class MuscleContainer extends Component{
               <input type="button" value="Copy search critera to clipboard" onClick={this.copySearchCritera} />
               <br></br>
               <div class="colorControls">
-                <div class="flesh colorbox">
-                  Flesh
+                <div class="flesh colorbox" title="Flesh">
                   <div class="circleFlesh"></div>
                   <input type="checkbox"
                     name="F"
                     onChange={this.handleInputChange}
                     checked={this.state.displayColors["F"]} />
                 </div>
-                <div class="red colorbox">
-                  Red
+                <div class="red colorbox" title="Red">
                   <div class="circleRed"></div>
                   <input type="checkbox"
                     name="R"
                     onChange={this.handleInputChange}
                     checked={this.state.displayColors["R"]} />
                 </div>
-                <div class="salmon colorbox">
-                  Salmon
+                <div class="salmon colorbox" title="Salmon">
                   <div class="circleSalmon"></div>
                   <input type="checkbox"
                     name="S"
                     onChange={this.handleInputChange}
                     checked={this.state.displayColors["S"]} />
                 </div>
-                <div class="orange colorbox">
-                  Orange
+                <div class="orange colorbox" title="Orange">
                   <div class="circleOrange"></div>
                   <input type="checkbox"
                     name="O"
                     onChange={this.handleInputChange}
                     checked={this.state.displayColors["O"]} />
                 </div>
-                <div class="magenta colorbox">
-                  Magenta
+                <div class="magenta colorbox" title="Magenta">
                   <div class="circleMagenta"></div>
                   <input type="checkbox"
                     name="M"
@@ -283,40 +278,35 @@ class MuscleContainer extends Component{
               </div>
               <br></br>
               <div class="colorControls">
-                <div class="purple colorbox">
-                  Purple
+                <div class="purple colorbox" title="Purple">
                   <div class="circlePurple"></div>
                   <input type="checkbox"
                     name="P"
                     onChange={this.handleInputChange}
                     checked={this.state.displayColors["P"]} />
                 </div>
-                <div class="grape colorbox">
-                  Grape
+                <div class="grape colorbox" title="Grape">
                   <div class="circleGrape"></div>
                   <input type="checkbox"
                     name="GR"
                     onChange={this.handleInputChange}
                     checked={this.state.displayColors["GR"]} />
                 </div>
-                <div class="blue colorbox">
-                  Blue
+                <div class="blue colorbox" title="Blue">
                   <div class="circleBlue"></div>
                   <input type="checkbox"
                     name="B"
                     onChange={this.handleInputChange}
                     checked={this.state.displayColors["B"]} />
                 </div>
-                <div class="lightBlue colorbox">
-                  Light Blue
+                <div class="lightBlue colorbox" title="Light Blue">
                   <div class="circleLightBlue"></div>
                   <input type="checkbox"
                     name="L"
                     onChange={this.handleInputChange}
                     checked={this.state.displayColors["L"]} />
                 </div>
-                <div class="green colorbox">
-                  Green
+                <div class="green colorbox" title="Green">
                   <div class="circleGreen"></div>
                   <input type="checkbox"
                     name="G"
