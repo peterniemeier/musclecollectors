@@ -59,6 +59,12 @@
 
 }
 
+form {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+}
+
 .individualMuscleData {
   justify-content: center;
   margin-right: 15px;
@@ -117,9 +123,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 10px;
 }
 
-#circlePurple {
+.circlePurple {
   width: 20px;
   height: 20px;
   -webkit-border-radius: 10px;
@@ -128,7 +135,7 @@
   background: #933fcb;
 }
 
-#circleGrape {
+.circleGrape {
   width: 20px;
   height: 20px;
   -webkit-border-radius: 10px;
@@ -137,7 +144,7 @@
   background: #da6ee1;
 }
 
-#circleMagenta {
+.circleMagenta {
   width: 20px;
   height: 20px;
   -webkit-border-radius: 10px;
@@ -146,7 +153,7 @@
   background: #e63291;
 }
 
-#circleGreen {
+.circleGreen {
   width: 20px;
   height: 20px;
   -webkit-border-radius: 10px;
@@ -155,7 +162,7 @@
   background: #a9df3d;
 }
 
-#circleOrange {
+.circleOrange {
   width: 20px;
   height: 20px;
   -webkit-border-radius: 10px;
@@ -164,7 +171,7 @@
   background: #fbac2a;
 }
 
-#circleLightBlue {
+.circleLightBlue {
   width: 20px;
   height: 20px;
   -webkit-border-radius: 10px;
@@ -173,7 +180,7 @@
   background: #23c8ee;
 }
 
-#circleBlue {
+.circleBlue {
   width: 20px;
   height: 20px;
   -webkit-border-radius: 10px;
@@ -182,7 +189,7 @@
   background: #145b90;
 }
 
-#circleRed {
+.circleRed {
   width: 20px;
   height: 20px;
   -webkit-border-radius: 10px;
@@ -191,7 +198,7 @@
   background: #eb251a;
 }
 
-#circleFlesh {
+.circleFlesh {
   width: 20px;
   height: 20px;
   -webkit-border-radius: 10px;
@@ -200,13 +207,19 @@
   background: #f0cebc;
 }
 
-#circleSalmon {
+.circleSalmon {
   width: 20px;
   height: 20px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
   background: #f28360;
+}
+
+.colorbox {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .individualColor {
@@ -218,4 +231,13 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+}
+
+#searchCriteriaValue  {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#searchMatchValue {
+  margin-bottom: 10px;
 }

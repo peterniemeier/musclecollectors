@@ -7,7 +7,6 @@ class MuscleContainer extends Component{
     constructor(props) {
       super(props);
 
-      let displaySetValue = new Set();
       let selectedColorsSet = new Set();
       selectedColorsSet.add("F");
       selectedColorsSet.add("R");
@@ -23,8 +22,7 @@ class MuscleContainer extends Component{
       selectedClassesSet.add("A");
       selectedClassesSet.add("B");
       selectedClassesSet.add("B");
-      this.displaySetValue = displaySetValue;
-      // console.log(displaySetValue);
+      this.displaySetValue = this.props.displaySetValue;
       this.handleSearchCriteriaChange = this.handleSearchCriteriaChange.bind(this);
       this.handleInputChange = this.handleInputChange.bind(this);
       this.handleInputClassChange = this.handleInputClassChange.bind(this);
@@ -46,8 +44,8 @@ class MuscleContainer extends Component{
       classMap["B"] = true;
       classMap["C"] = true;
       this.state = {
-        searchCriteria: this.props.displaySet,
-        displaySet: displaySetValue,
+        searchCriteria: this.props.searchCriteria,
+        displaySet: this.props.displaySetValue,
         displayColors: colorMap,
         displayClass: classMap,
         displayDirection: false,
@@ -59,6 +57,7 @@ class MuscleContainer extends Component{
 
     copySearchCritera(event) {
       let copyText = document.getElementById("searchCriteriaValue");
+      console.log(copyText);
       copyText.select();
       copyText.setSelectionRange(0, 9999999); /* For mobile devices */
       document.execCommand("copy");
@@ -94,68 +93,19 @@ class MuscleContainer extends Component{
     }
 
     handleSearchCriteriaChange(event){
-      // const {handleSearchCriteriaChange} = this.props;
-      // handleSearchCriteriaChange(event);
-      let newValue = event.target.value;
-      newValue = newValue.replace(/\s/g, "");
-      newValue = newValue.split(",");
-      let newDisplaySetValue = new Set();
-      let shouldUpdateCriteria = false;
-      // console.log(this.state);
-
-      newValue.forEach(function(v) {
-        if (newDisplaySetValue.has(v) || parseInt(v) > 236) {
-          shouldUpdateCriteria = false;
-        } else {
-          // console.log("Adding to set");
-          newDisplaySetValue.add(v);
-          shouldUpdateCriteria = true;
-        }
-        // console.log("Should criteria be updated? " + shouldUpdateCriteria);
-        if (shouldUpdateCriteria) {
-          this.displaySetValue = newDisplaySetValue;
-          // console.log(this.displaySetValue);
-          this.setState(function(prevState, props) {
-            return {searchCriteria: newValue,
-              displaySet: newDisplaySetValue
-              };
-          });
-        }
-      }.bind(this));
+      const {handleSearchCriteriaChange} = this.props;
+      handleSearchCriteriaChange(event);
     }
 
     render() {
-      //console.log(muscleData);
-      // console.log(this.state.displayColors);
       const allMuscleFigures = [];
-
-      // console.log(muscleData[1].class);
-      // for (let k in muscleData[1].class) {
-      //     console.log(muscleData[1].class[k]);
-      //     let arr = muscleData[1].class[k];
-      //     arr.forEach((color, i) => {
-      //
-      //       console.log(color);
-      //     });
-      // }
-      // if (this.displaySetValue.size == 0) {
-      //   console.log("match");
-      // } else {
-      //   console.log("no match");
-      // }
-
       for (let k in muscleData) {
-        // console.log(this.displaySetValue.size);
-        // console.log(this.displaySetValue);
-        if (!this.displaySetValue.has(k) && this.displaySetValue.size !== 0 && !this.displaySetValue.has("")) {
+        if (!this.props.displaySetValue.has(k) && this.props.displaySetValue.size !== 0 && !this.props.displaySetValue.has("")) {
           continue;
         }
-        if (this.displaySetValue.size === 1 && !this.displaySetValue[0] === "") {
+        if (this.props.displaySetValue.size === 1 && !this.props.displaySetValue[0] === "") {
           continue
         }
-
-        // console.log(muscleData[k].classes);
-
         let displayMuscle = false;
         //console.log(muscleData[k]);
         let classData = [];
@@ -205,17 +155,8 @@ class MuscleContainer extends Component{
               default:
                 specificColor = "F"
             }
-
-
-
-          // classes.any(function(classArray) {
-          //   if (classArray.indexOf(color) != -1) {
-          //     colors.push(<li class="individualColor"><div id={`${specificColor}`}></div></li>);
-          //   }
-          // });
-
             //console.log("Color is " + color);
-            colors.push(<li class="individualColor"><div id={`${specificColor}`}></div></li>);
+            colors.push(<li class="individualColor"><div class={`${specificColor}`}></div></li>);
           });
 
           classData.push(
@@ -226,9 +167,7 @@ class MuscleContainer extends Component{
           let classC = [];
 
           if (muscleData[k].classes["A"] !== undefined) {
-            // console.log(classA);
             classA = muscleData[k].classes["A"];
-            // console.log(classA);
           }
           if (muscleData[k].classes["B"] !== undefined) {
             classB = muscleData[k].classes["B"];
@@ -236,7 +175,6 @@ class MuscleContainer extends Component{
           if (muscleData[k].classes["C"] !== undefined) {
             classC = muscleData[k].classes["C"];
           }
-          // console.log(classA);
           let stateCopy = this.state;
           if (classA.length > 0) {
             classA.forEach(function(classColor) {
@@ -262,34 +200,8 @@ class MuscleContainer extends Component{
               }
             });
           }
-          // classA.forEach(function(color) {
-          //   if (this.state.displayColor[color] === true
-          //   && this.state.displayClass[ke] === true) {
-          //     displayMuscle = true;
-          //   }
-          // }.bind(this));
-          //
-          // classB.forEach(function(color) {
-          //   if (this.state.displayColor[color] === true
-          //   && this.state.displayClass[ke] === true) {
-          //     displayMuscle = true;
-          //   }
-          // }.bind(this));
-          //
-          // classC.forEach(function(color) {
-          //   if (this.state.displayColor[color] === true
-          //   && this.state.displayClass[ke] === true) {
-          //     displayMuscle = true;
-          //   }
-          // }.bind(this));
-          // displayMuscle = true;
-      }
-        // console.log(this.state.displayColors.F);
-
-
-
+        }
         let classDataSpacing = "classDataOne";
-        // console.log(Object.keys(muscleData[k].classes).length);
         switch (Object.keys(muscleData[k].classes).length) {
           case 1:
             classDataSpacing = "classDataOne";
@@ -303,7 +215,6 @@ class MuscleContainer extends Component{
           default:
           classDataSpacing = "classDataOne";
         }
-
         if (displayMuscle) {
           let direction = this.state.displayDirection ? "b" : "a";
 
@@ -318,88 +229,95 @@ class MuscleContainer extends Component{
             </div>
           </div>);
         }
-
-        }
-
-
-
-
+      }
         return (
-
           <div>
             <div class="searchControls">
               Search with comma-separated numbers. Example: 1,9,236
               <br></br>
-              <input id="searchCriteriaValue" type="text" value={this.state.searchCriteria} onChange={this.handleSearchCriteriaChange} />
+              <input id="searchCriteriaValue" type="text" value={this.props.searchCriteria} onChange={this.handleSearchCriteriaChange} />
               <br></br>
               <input type="button" value="Copy search critera to clipboard" onClick={this.copySearchCritera} />
               <br></br>
               <div class="colorControls">
-                <div class="flesh">
+                <div class="flesh colorbox">
                   Flesh
+                  <div class="circleFlesh"></div>
                   <input type="checkbox"
                     name="F"
                     onChange={this.handleInputChange}
                     checked={this.state.displayColors["F"]} />
                 </div>
-                <div class="red">
+                <div class="red colorbox">
                   Red
+                  <div class="circleRed"></div>
                   <input type="checkbox"
                     name="R"
                     onChange={this.handleInputChange}
                     checked={this.state.displayColors["R"]} />
                 </div>
-                <div class="salmon">
+                <div class="salmon colorbox">
                   Salmon
+                  <div class="circleSalmon"></div>
                   <input type="checkbox"
                     name="S"
                     onChange={this.handleInputChange}
                     checked={this.state.displayColors["S"]} />
                 </div>
-                <div class="orange">
+                <div class="orange colorbox">
                   Orange
+                  <div class="circleOrange"></div>
                   <input type="checkbox"
                     name="O"
                     onChange={this.handleInputChange}
                     checked={this.state.displayColors["O"]} />
                 </div>
-                <div class="magenta">
+                <div class="magenta colorbox">
                   Magenta
+                  <div class="circleMagenta"></div>
                   <input type="checkbox"
                     name="M"
                     onChange={this.handleInputChange}
                     checked={this.state.displayColors["M"]} />
                 </div>
-                <div class="purple">
+              </div>
+              <br></br>
+              <div class="colorControls">
+                <div class="purple colorbox">
                   Purple
+                  <div class="circlePurple"></div>
                   <input type="checkbox"
                     name="P"
                     onChange={this.handleInputChange}
                     checked={this.state.displayColors["P"]} />
                 </div>
-                <div class="grape">
+                <div class="grape colorbox">
                   Grape
+                  <div class="circleGrape"></div>
                   <input type="checkbox"
                     name="GR"
                     onChange={this.handleInputChange}
                     checked={this.state.displayColors["GR"]} />
                 </div>
-                <div class="blue">
+                <div class="blue colorbox">
                   Blue
+                  <div class="circleBlue"></div>
                   <input type="checkbox"
                     name="B"
                     onChange={this.handleInputChange}
                     checked={this.state.displayColors["B"]} />
                 </div>
-                <div class="lightBlue">
+                <div class="lightBlue colorbox">
                   Light Blue
+                  <div class="circleLightBlue"></div>
                   <input type="checkbox"
                     name="L"
                     onChange={this.handleInputChange}
                     checked={this.state.displayColors["L"]} />
                 </div>
-                <div class="green">
+                <div class="green colorbox">
                   Green
+                  <div class="circleGreen"></div>
                   <input type="checkbox"
                     name="G"
                     onChange={this.handleInputChange}
@@ -440,15 +358,19 @@ class MuscleContainer extends Component{
                     checked={this.state.displayDirection} />
                 </div>
               </div>
+              <br></br>
+              <form action="https://www.paypal.com/donate" method="post" target="_top">
+              <input type="hidden" name="hosted_button_id" value="JQMDXHFFH9SNL" />
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+              <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+              </form>
             </div>
-
             <div class="allMuscleData">
               {allMuscleFigures}
             </div>
           </div>
         )
     }
-
 }
 
 export default MuscleContainer;

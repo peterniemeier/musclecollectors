@@ -6,8 +6,6 @@ class CollectionTwo extends Component{
 
     constructor(props) {
       super(props);
-
-      let displaySetValue = new Set();
       let selectedColorsSet = new Set();
       selectedColorsSet.add("F");
       selectedColorsSet.add("R");
@@ -23,12 +21,8 @@ class CollectionTwo extends Component{
       selectedClassesSet.add("A");
       selectedClassesSet.add("B");
       selectedClassesSet.add("B");
-      this.displaySetValue = displaySetValue;
-      // console.log(displaySetValue);
+      this.displaySetCollectionTwoValue = this.props.displaySetValue
       this.handleSearchCriteriaChange = this.handleSearchCriteriaChange.bind(this);
-      // this.handleInputChange = this.handleInputChange.bind(this);
-      // this.handleInputClassChange = this.handleInputClassChange.bind(this);
-      // this.handleInputDirectionChange = this.handleInputDirectionChange.bind(this);
       const colorMap = new Map();
       colorMap["F"] = true;
       colorMap["R"] = true;
@@ -45,8 +39,8 @@ class CollectionTwo extends Component{
       classMap["B"] = true;
       classMap["C"] = true;
       this.state = {
-        searchCriteria: "",
-        displaySet: displaySetValue,
+        searchCriteria: this.props.searchCriteria,
+        displaySet: this.props.displaySetValue,
         displayColors: colorMap,
         displayClass: classMap,
         displayDirection: false,
@@ -85,37 +79,11 @@ class CollectionTwo extends Component{
     // }
     //
     handleSearchCriteriaChange(event){
-      let newValue = event.target.value;
-      newValue = newValue.replace(/\s/g, "");
-      newValue = newValue.split(",");
-      let newDisplaySetValue = new Set();
-      let shouldUpdateCriteria = false;
-      // console.log(this.state);
-
-      newValue.forEach(function(v) {
-        if (newDisplaySetValue.has(v) || parseInt(v) > 236) {
-          shouldUpdateCriteria = false;
-        } else {
-          // console.log("Adding to set");
-          newDisplaySetValue.add(v);
-          shouldUpdateCriteria = true;
-        }
-        // console.log("Should criteria be updated? " + shouldUpdateCriteria);
-        if (shouldUpdateCriteria) {
-          this.displaySetValue = newDisplaySetValue;
-          // console.log(this.displaySetValue);
-          this.setState(function(prevState, props) {
-            return {searchCriteria: newValue,
-              displaySet: newDisplaySetValue
-              };
-          });
-        }
-      }.bind(this));
+      const {handleSearchCriteriaChange} = this.props;
+      handleSearchCriteriaChange(event);
     }
 
     render() {
-      //console.log(muscleData);
-      // console.log(this.state.displayColors);
       const allMuscleFigures = [];
 
       // console.log(muscleData[1].class);
@@ -134,12 +102,10 @@ class CollectionTwo extends Component{
       // }
 
       for (let k in muscleData) {
-        // console.log(this.displaySetValue.size);
-        // console.log(this.displaySetValue);
-        if (!this.displaySetValue.has(k) && this.displaySetValue.size !== 0 && !this.displaySetValue.has("")) {
+        if (!this.props.displaySetValue.has(k) && this.props.displaySetValue.size !== 0 && !this.props.displaySetValue.has("")) {
           continue;
         }
-        if (this.displaySetValue.size === 1 && !this.displaySetValue[0] === "") {
+        if (this.props.displaySetValue.size === 1 && !this.props.displaySetValue[0] === "") {
           continue
         }
 
@@ -307,29 +273,21 @@ class CollectionTwo extends Component{
             </div>*/}
           </div>);
         }
-
       }
-
-
-
-
         return (
-
           <div>
             Use the search field to populate this screen with the figures from a second Collection.
             <div class="searchControls">
               Use comma-separated numbers (e.g. 1,9,236)
-              <input type="text" value={this.state.searchCriteria} onChange={this.handleSearchCriteriaChange} />
+              <input id="searchCriteriaCollectionTwoValue" type="text" value={this.props.searchCriteria} onChange={this.handleSearchCriteriaChange} />
             </div>
               <br></br>
             <div class="allMuscleData">
               {allMuscleFigures}
             </div>
           </div>
-
         )
     }
-
 }
 
 export default CollectionTwo;

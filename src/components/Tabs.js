@@ -14,9 +14,12 @@ class Tabs extends Component {
   constructor(props) {
     super(props);
     this.handleSearchCriteriaChange = this.handleSearchCriteriaChange.bind(this);
-    // let collectionOneSet = new Set();
-    // let collectionTwoSet = new Set();
-    // let matchCollectionSet = new Set();
+    let displaySetValue = new Set();
+    this.displaySetValue = displaySetValue;
+    let displaySetCollectionOneValue = new Set();
+    this.displaySetCollectionOneValue = displaySetValue;
+    let displaySetCollectionTwoValue = new Set();
+    this.displaySetCollectionTwoValue = displaySetValue;
     let muscleContainerSet = "";
     let collectionOneSet = "";
     let collectionTwoSet = "";
@@ -25,20 +28,25 @@ class Tabs extends Component {
     this.state = {
       activeTab: this.props.children[0].props.label,
       searchCriteria: "",
+      searchCriteriaCollectionOne: "",
+      searchCriteriaCollectionTwo: "",
       muscleContainer: muscleContainerSet,
       collectionOne: collectionOneSet,
       collectionTwo: collectionTwoSet,
       matchCollection: matchCollectionSet,
+      displaySet: displaySetValue,
+      displaySetCollectionOne: displaySetCollectionOneValue,
+      displaySetCollectionTwo: displaySetCollectionTwoValue,
     };
   }
 
   handleSearchCriteriaChange(event){
+    console.log(event.target.id);
     let newValue = event.target.value;
     newValue = newValue.replace(/\s/g, "");
     newValue = newValue.split(",");
     let newDisplaySetValue = new Set();
     let shouldUpdateCriteria = false;
-    // console.log(this.state);
 
     newValue.forEach(function(v) {
       if (newDisplaySetValue.has(v) || parseInt(v) > 236) {
@@ -48,15 +56,45 @@ class Tabs extends Component {
         newDisplaySetValue.add(v);
         shouldUpdateCriteria = true;
       }
-      // console.log("Should criteria be updated? " + shouldUpdateCriteria);
       if (shouldUpdateCriteria) {
-        this.displaySetValue = newDisplaySetValue;
-        // console.log(this.displaySetValue);
-        this.setState(function(prevState, props) {
-          return {searchCriteria: newValue,
-            displaySet: newDisplaySetValue
-            };
-        });
+        switch(event.target.id) {
+          case "searchCriteriaValue":
+          this.displaySetValue = newDisplaySetValue;
+          // console.log(this.displaySetValue);
+          this.setState(function(prevState, props) {
+            return {searchCriteria: newValue,
+              displaySet: newDisplaySetValue
+              };
+          });
+          break;
+          case "searchCriteriaCollectionOneValue":
+          this.displaySetCollectionOneValue = newDisplaySetValue;
+          console.log("here");
+          this.setState(function(prevState, props) {
+            return {searchCriteriaCollectionOne: newValue,
+              displaySetCollectionOne: newDisplaySetValue
+              };
+          });
+          break;
+          case "searchCriteriaCollectionTwoValue":
+          this.displaySetCollectionTwoValue = newDisplaySetValue;
+          this.setState(function(prevState, props) {
+            return {searchCriteriaCollectionTwo: newValue,
+              displaySetCollectionTwo: newDisplaySetValue
+              };
+          });
+          break;
+          default:
+          this.displaySetValue = newDisplaySetValue;
+          // console.log(this.displaySetValue);
+          this.setState(function(prevState, props) {
+            return {searchCriteria: newValue,
+              displaySet: newDisplaySetValue
+              };
+          });
+        }
+
+
       }
     }.bind(this));
   }
@@ -71,16 +109,22 @@ class Tabs extends Component {
     const {
       onClickTabItem,
       handleSearchCriteriaChange,
+      displaySetValue,
+      displaySet,
+      displaySetCollectionOneValue,
+      displaySetCollectionTwoValue,
       props: {
         children,
       },
       state: {
-        searchCriteria,
         activeTab,
         muscleContainerSet,
         collectionOne,
         collectionTwo,
         matchCollection,
+        searchCriteria,
+        searchCriteriaCollectionOne,
+        searchCriteriaCollectionTwo,
       }
     } = this;
 
@@ -96,12 +140,6 @@ class Tabs extends Component {
                 key={label}
                 label={label}
                 onClick={onClickTabItem}
-                searchCriteria={searchCriteria}
-                handleSearchCriteriaChange={handleSearchCriteriaChange}
-                muscleContainerSet={muscleContainerSet}
-                collectionOne={collectionOne}
-                collectionTwo={collectionTwo}
-                matchCollection={matchCollection}
               />
             );
           })}
@@ -110,10 +148,10 @@ class Tabs extends Component {
           {children.map((child) => {
             if (child.props.label !== activeTab) return undefined;
             console.log(activeTab);
-            if (activeTab === "Master Checklist") return <MuscleContainer />;
-            if (activeTab === "Collection One") return <CollectionOne />;
-            if (activeTab === "Collection Two") return <CollectionTwo />;
-            if (activeTab === "Matches") return <Matches />;
+            if (activeTab === "Master Checklist") return <MuscleContainer handleSearchCriteriaChange={handleSearchCriteriaChange} displaySetValue={displaySetValue} searchCriteria={searchCriteria}/>;
+            if (activeTab === "Collection One") return <CollectionOne handleSearchCriteriaChange={handleSearchCriteriaChange} displaySetValue={displaySetCollectionOneValue} searchCriteria={searchCriteriaCollectionOne}/>;
+            if (activeTab === "Collection Two") return <CollectionTwo handleSearchCriteriaChange={handleSearchCriteriaChange} displaySetValue={displaySetCollectionTwoValue} searchCriteria={searchCriteriaCollectionTwo}/>;
+            if (activeTab === "Matches") return <Matches displaySetOneValue={displaySetCollectionOneValue} displaySetTwoValue={displaySetCollectionTwoValue}/>;
             }
 
             // child.props.handleSearchCriteriaChange = handleSearchCriteriaChange;

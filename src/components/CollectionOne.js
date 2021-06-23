@@ -7,8 +7,6 @@ class CollectionOne extends Component{
 
     constructor(props) {
       super(props);
-
-      let displaySetValue = new Set();
       let selectedColorsSet = new Set();
       selectedColorsSet.add("F");
       selectedColorsSet.add("R");
@@ -24,12 +22,8 @@ class CollectionOne extends Component{
       selectedClassesSet.add("A");
       selectedClassesSet.add("B");
       selectedClassesSet.add("B");
-      this.displaySetValue = displaySetValue;
-      // console.log(displaySetValue);
+      this.displaySetCollectionOneValue = this.props.displaySetValue;
       this.handleSearchCriteriaChange = this.handleSearchCriteriaChange.bind(this);
-      // this.handleInputChange = this.handleInputChange.bind(this);
-      // this.handleInputClassChange = this.handleInputClassChange.bind(this);
-      // this.handleInputDirectionChange = this.handleInputDirectionChange.bind(this);
       const colorMap = new Map();
       colorMap["F"] = true;
       colorMap["R"] = true;
@@ -46,8 +40,8 @@ class CollectionOne extends Component{
       classMap["B"] = true;
       classMap["C"] = true;
       this.state = {
-        searchCriteria: this.props.collectionOne,
-        displaySet: displaySetValue,
+        searchCriteria: this.props.searchCriteria,
+        displaySet: this.props.displaySetValue,
         displayColors: colorMap,
         displayClass: classMap,
         displayDirection: false,
@@ -56,43 +50,13 @@ class CollectionOne extends Component{
 
       };
     }
-    //
-    // handleInputChange(event) {
-    //   const target = event.target;
-    //   const value = target.type === 'checkbox' ? target.checked : target.value;
-    //   const name = target.name;
-    //   var someProperty = this.state.displayColors;
-    //   someProperty[name] = value;
-    //   this.setState({displayColors: someProperty});
-    // }
-    //
-    // handleInputClassChange(event) {
-    //   const target = event.target;
-    //   const value = target.type === 'checkbox' ? target.checked : target.value;
-    //   const name = target.name;
-    //   var someProperty = this.state.displayClass;
-    //   someProperty[name] = value;
-    //   this.setState({displayClass: someProperty});
-    // }
-    //
-    // handleInputDirectionChange(event) {
-    //   const target = event.target;
-    //   const value = target.type === 'checkbox' ? target.checked : target.value;
-    //   const name = target.name;
-    //   this.setState(function(prevState, props) {
-    //     return {displayDirection: value
-    //       };
-    //   });
-    // }
-    //
     static propTypes = {
       handleSearchCriteria: PropTypes.func.isRequired,
     };
 
     handleSearchCriteriaChange = (event) => {
-      const { handleSearchCriteriaChange } = this.props;
-      // handleSearchCriteria(event);
-      console.log(handleSearchCriteriaChange);
+      const {handleSearchCriteriaChange} = this.props;
+      handleSearchCriteriaChange(event);
     }
 
     render() {
@@ -118,10 +82,10 @@ class CollectionOne extends Component{
       for (let k in muscleData) {
         // console.log(this.displaySetValue.size);
         // console.log(this.displaySetValue);
-        if (!this.displaySetValue.has(k) && this.displaySetValue.size !== 0 && !this.displaySetValue.has("")) {
+        if (!this.props.displaySetValue.has(k) && this.props.displaySetValue.size !== 0 && !this.props.displaySetValue.has("")) {
           continue;
         }
-        if (this.displaySetValue.size === 1 && !this.displaySetValue[0] === "") {
+        if (this.props.displaySetValue.size === 1 && !this.props.displaySetValue[0] === "") {
           continue
         }
 
@@ -255,12 +219,7 @@ class CollectionOne extends Component{
           // }.bind(this));
           // displayMuscle = true;
         }
-        // console.log(this.state.displayColors.F);
-
-
-
         let classDataSpacing = "classDataOne";
-        // console.log(Object.keys(muscleData[k].classes).length);
         switch (Object.keys(muscleData[k].classes).length) {
           case 1:
             classDataSpacing = "classDataOne";
@@ -276,8 +235,6 @@ class CollectionOne extends Component{
         }
 
         if (displayMuscle) {
-          // let direction = this.state.displayDirection ? "b" : "a";
-
           allMuscleFigures.push(<div class="individualMuscleDataNoColorOrClassData">
             <div class="classificationNumber">{k}</div>
             <br></br>
@@ -289,18 +246,13 @@ class CollectionOne extends Component{
             </div>*/}
           </div>);
         }
-
       }
-
-
-
-
         return (
           <div>
             Use the search field to populate this screen with the figures from one Collection.
             <div class="searchControls">
               Use comma-separated numbers (e.g. 1,9,236)
-              <input type="text" value={this.state.searchCriteria} onChange={this.handleSearchCriteriaChange} />
+              <input id="searchCriteriaCollectionOneValue" type="text" value={this.props.searchCriteria} onChange={this.handleSearchCriteriaChange} />
             </div>
               <br></br>
             <div class="allMuscleData">
@@ -310,7 +262,6 @@ class CollectionOne extends Component{
 
         )
     }
-
 }
 
 export default CollectionOne;
