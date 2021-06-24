@@ -47,13 +47,19 @@ class MuscleContainer extends Component{
       this.state = {
         searchCriteria: this.props.searchCriteria,
         displaySet: this.props.displaySetValue,
-        displayColors: colorMap,
-        displayClass: classMap,
-        displayDirection: false,
+        displayColors: this.props.colorMap,
+        displayClass: this.props.classMap,
+        displayDirection: this.props.displayDirection,
         selectedColors: selectedColorsSet,
         selectedClasses: selectedClassesSet,
       };
     }
+
+    componentWillReceiveProps(nextProps) {
+      this.setState({ displayColors: nextProps.displayColors,
+       displayClass: nextProps.displayClass,
+       displayDirection: nextProps.displayDirection});
+      }
 
     copySearchCritera(event) {
       let copyText = document.getElementById("searchCriteriaValue");
@@ -65,105 +71,23 @@ class MuscleContainer extends Component{
     }
 
     handleInputChange(event) {
-      const target = event.target;
-      const value = target.type === 'checkbox' ? target.checked : target.value;
-      const name = target.name;
-      let someProperty = this.state.displayColors;
-      someProperty[name] = value;
-      this.setState({displayColors: someProperty});
+      const {handleInputChange} = this.props;
+      handleInputChange(event);
     }
 
     handleInputClassChange(event) {
-      const target = event.target;
-      const value = target.type === 'checkbox' ? target.checked : target.value;
-      const name = target.name;
-      let someProperty = this.state.displayClass;
-      someProperty[name] = value;
-      this.setState({displayClass: someProperty});
+      const {handleInputClassChange} = this.props;
+      handleInputClassChange(event);
     }
 
     handleCheckAll(event) {
-      switch(event.target.id) {
-        case "uncheckInput":
-        let uncheckAllColors = this.state.displayColors;
-        let uncheckAllClasses = this.state.displayClass;
-        uncheckAllColors["F"] = false;
-        uncheckAllColors["R"] = false;
-        uncheckAllColors["B"] = false;
-        uncheckAllColors["L"] = false;
-        uncheckAllColors["O"] = false;
-        uncheckAllColors["M"] = false;
-        uncheckAllColors["P"] = false;
-        uncheckAllColors["GR"] = false;
-        uncheckAllColors["G"] = false;
-        uncheckAllColors["S"] = false;
-        uncheckAllClasses["A"] = false;
-        uncheckAllClasses["B"] = false;
-        uncheckAllClasses["C"] = false;
-        this.setState(function(prevState, props) {
-          return {
-            displayColors: uncheckAllColors,
-            displayClass: uncheckAllClasses
-            };
-        });
-        break;
-        case "checkInput":
-        let checkAllColors = this.state.displayColors;
-        let checkAllClasses = this.state.displayClass;
-        checkAllColors["F"] = true;
-        checkAllColors["R"] = true;
-        checkAllColors["B"] = true;
-        checkAllColors["L"] = true;
-        checkAllColors["O"] = true;
-        checkAllColors["M"] = true;
-        checkAllColors["P"] = true;
-        checkAllColors["GR"] = true;
-        checkAllColors["G"] = true;
-        checkAllColors["S"] = true;
-        checkAllClasses["A"] = true;
-        checkAllClasses["B"] = true;
-        checkAllClasses["C"] = true;
-        console.log("here");
-        this.setState(function(prevState, props) {
-          return {
-            displayColors: checkAllColors,
-            displayClass: checkAllClasses
-            };
-        });
-        break;
-        default:
-        let uncheckAllColorsDefault = this.state.displayColors;
-        let uncheckAllClassesDefault = this.state.displayClass;
-        uncheckAllColorsDefault["F"] = false;
-        uncheckAllColorsDefault["R"] = false;
-        uncheckAllColorsDefault["B"] = false;
-        uncheckAllColorsDefault["L"] = false;
-        uncheckAllColorsDefault["O"] = false;
-        uncheckAllColorsDefault["M"] = false;
-        uncheckAllColorsDefault["P"] = false;
-        uncheckAllColorsDefault["GR"] = false;
-        uncheckAllColorsDefault["G"] = false;
-        uncheckAllColorsDefault["S"] = false;
-        uncheckAllClassesDefault["A"] = false;
-        uncheckAllClassesDefault["B"] = false;
-        uncheckAllClassesDefault["C"] = false;
-        this.setState(function(prevState, props) {
-          return {
-            displayColors: uncheckAllColorsDefault,
-            displayClass: uncheckAllClassesDefault
-            };
-        });
-      }
+      const {handleCheckAll} = this.props;
+      handleCheckAll(event);
     }
 
     handleInputDirectionChange(event) {
-      const target = event.target;
-      const value = target.type === 'checkbox' ? target.checked : target.value;
-      const name = target.name;
-      this.setState(function(prevState, props) {
-        return {displayDirection: value
-          };
-      });
+      const {handleInputDirectionChange} = this.props;
+      handleInputDirectionChange(event);
     }
 
     handleSearchCriteriaChange(event){
@@ -249,7 +173,7 @@ class MuscleContainer extends Component{
           if (muscleData[k].classes["C"] !== undefined) {
             classC = muscleData[k].classes["C"];
           }
-          let stateCopy = this.state;
+          let stateCopy = this.props;
           if (classA.length > 0) {
             classA.forEach(function(classColor) {
               if (stateCopy.displayColors[classColor] === true
@@ -326,35 +250,35 @@ class MuscleContainer extends Component{
                   <input type="checkbox"
                     name="F"
                     onChange={this.handleInputChange}
-                    checked={this.state.displayColors["F"]} />
+                    checked={this.props.displayColors["F"]} />
                 </div>
                 <div class="red colorbox" title="Red">
                   <div class="circleRed"></div>
                   <input type="checkbox"
                     name="R"
                     onChange={this.handleInputChange}
-                    checked={this.state.displayColors["R"]} />
+                    checked={this.props.displayColors["R"]} />
                 </div>
                 <div class="salmon colorbox" title="Salmon">
                   <div class="circleSalmon"></div>
                   <input type="checkbox"
                     name="S"
                     onChange={this.handleInputChange}
-                    checked={this.state.displayColors["S"]} />
+                    checked={this.props.displayColors["S"]} />
                 </div>
                 <div class="orange colorbox" title="Orange">
                   <div class="circleOrange"></div>
                   <input type="checkbox"
                     name="O"
                     onChange={this.handleInputChange}
-                    checked={this.state.displayColors["O"]} />
+                    checked={this.props.displayColors["O"]} />
                 </div>
                 <div class="magenta colorbox" title="Magenta">
                   <div class="circleMagenta"></div>
                   <input type="checkbox"
                     name="M"
                     onChange={this.handleInputChange}
-                    checked={this.state.displayColors["M"]} />
+                    checked={this.props.displayColors["M"]} />
                 </div>
               </div>
               <br></br>
@@ -364,35 +288,35 @@ class MuscleContainer extends Component{
                   <input type="checkbox"
                     name="P"
                     onChange={this.handleInputChange}
-                    checked={this.state.displayColors["P"]} />
+                    checked={this.props.displayColors["P"]} />
                 </div>
                 <div class="grape colorbox" title="Grape">
                   <div class="circleGrape"></div>
                   <input type="checkbox"
                     name="GR"
                     onChange={this.handleInputChange}
-                    checked={this.state.displayColors["GR"]} />
+                    checked={this.props.displayColors["GR"]} />
                 </div>
                 <div class="blue colorbox" title="Blue">
                   <div class="circleBlue"></div>
                   <input type="checkbox"
                     name="B"
                     onChange={this.handleInputChange}
-                    checked={this.state.displayColors["B"]} />
+                    checked={this.props.displayColors["B"]} />
                 </div>
                 <div class="lightBlue colorbox" title="Light Blue">
                   <div class="circleLightBlue"></div>
                   <input type="checkbox"
                     name="L"
                     onChange={this.handleInputChange}
-                    checked={this.state.displayColors["L"]} />
+                    checked={this.props.displayColors["L"]} />
                 </div>
                 <div class="green colorbox" title="Green">
                   <div class="circleGreen"></div>
                   <input type="checkbox"
                     name="G"
                     onChange={this.handleInputChange}
-                    checked={this.state.displayColors["G"]} />
+                    checked={this.props.displayColors["G"]} />
                 </div>
               </div>
               <br></br>
@@ -402,21 +326,21 @@ class MuscleContainer extends Component{
                   <input type="checkbox"
                     name="A"
                     onChange={this.handleInputClassChange}
-                    checked={this.state.displayClass["A"]} />
+                    checked={this.props.displayClass["A"]} />
                 </div>
                 <div class="B">
                   Class B
                   <input type="checkbox"
                     name="B"
                     onChange={this.handleInputClassChange}
-                    checked={this.state.displayClass["B"]} />
+                    checked={this.props.displayClass["B"]} />
                 </div>
                 <div class="C">
                   Class C
                   <input type="checkbox"
                     name="C"
                     onChange={this.handleInputClassChange}
-                    checked={this.state.displayClass["C"]} />
+                    checked={this.props.displayClass["C"]} />
                 </div>
               </div>
               <br></br>
@@ -427,7 +351,7 @@ class MuscleContainer extends Component{
                     <input type="checkbox"
                       name="swapButton"
                       onChange={this.handleInputDirectionChange}
-                      checked={this.state.displayDirection} />
+                      checked={this.props.displayDirection} />
                   </div>
                 </div>
                 <div id="uncheckAll">
