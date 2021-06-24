@@ -73,19 +73,6 @@ form {
   font-size: 10%;
 }
 
-#massFilter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#checkAll {
-  margin-left: 10px;
-}
-#uncheckAll {
-  margin-left: 10px;
-}
-
 .individualMuscleData {
   justify-content: center;
   margin-right: 15px;
