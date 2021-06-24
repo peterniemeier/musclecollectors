@@ -430,12 +430,7 @@ class MuscleContainer extends Component{
                       checked={this.state.displayDirection} />
                   </div>
                 </div>
-                <div id="uncheckAll">
-                  <input id="uncheckInput" type="button" value="Uncheck all" onClick={this.handleCheckAll}/>
-                </div>
-                <div id="checkAll">
-                  <input id="checkInput" type="button" value="Check All" onClick={this.handleCheckAll}/>
-                </div>
+
               </div>
               <br></br>
             </div>
