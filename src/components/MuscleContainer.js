@@ -28,6 +28,7 @@ class MuscleContainer extends Component{
       this.handleInputClassChange = this.handleInputClassChange.bind(this);
       this.handleInputDirectionChange = this.handleInputDirectionChange.bind(this);
       this.copySearchCritera = this.copySearchCritera.bind(this);
+      this.handleCheckAll = this.handleCheckAll.bind(this);
       const colorMap = new Map();
       colorMap["F"] = true;
       colorMap["R"] = true;
