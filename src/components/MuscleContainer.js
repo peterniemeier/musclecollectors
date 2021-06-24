@@ -28,6 +28,7 @@ class MuscleContainer extends Component{
       this.handleInputClassChange = this.handleInputClassChange.bind(this);
       this.handleInputDirectionChange = this.handleInputDirectionChange.bind(this);
       this.copySearchCritera = this.copySearchCritera.bind(this);
+      this.handleCheckAll = this.handleCheckAll.bind(this);
       const colorMap = new Map();
       colorMap["F"] = true;
       colorMap["R"] = true;
@@ -51,7 +52,6 @@ class MuscleContainer extends Component{
         displayDirection: false,
         selectedColors: selectedColorsSet,
         selectedClasses: selectedClassesSet,
-
       };
     }
 
@@ -68,7 +68,7 @@ class MuscleContainer extends Component{
       const target = event.target;
       const value = target.type === 'checkbox' ? target.checked : target.value;
       const name = target.name;
-      var someProperty = this.state.displayColors;
+      let someProperty = this.state.displayColors;
       someProperty[name] = value;
       this.setState({displayColors: someProperty});
     }
@@ -77,9 +77,83 @@ class MuscleContainer extends Component{
       const target = event.target;
       const value = target.type === 'checkbox' ? target.checked : target.value;
       const name = target.name;
-      var someProperty = this.state.displayClass;
+      let someProperty = this.state.displayClass;
       someProperty[name] = value;
       this.setState({displayClass: someProperty});
+    }
+
+    handleCheckAll(event) {
+      switch(event.target.id) {
+        case "uncheckInput":
+        let uncheckAllColors = this.state.displayColors;
+        let uncheckAllClasses = this.state.displayClass;
+        uncheckAllColors["F"] = false;
+        uncheckAllColors["R"] = false;
+        uncheckAllColors["B"] = false;
+        uncheckAllColors["L"] = false;
+        uncheckAllColors["O"] = false;
+        uncheckAllColors["M"] = false;
+        uncheckAllColors["P"] = false;
+        uncheckAllColors["GR"] = false;
+        uncheckAllColors["G"] = false;
+        uncheckAllColors["S"] = false;
+        uncheckAllClasses["A"] = false;
+        uncheckAllClasses["B"] = false;
+        uncheckAllClasses["C"] = false;
+        this.setState(function(prevState, props) {
+          return {
+            displayColors: uncheckAllColors,
+            displayClass: uncheckAllClasses
+            };
+        });
+        break;
+        case "checkInput":
+        let checkAllColors = this.state.displayColors;
+        let checkAllClasses = this.state.displayClass;
+        checkAllColors["F"] = true;
+        checkAllColors["R"] = true;
+        checkAllColors["B"] = true;
+        checkAllColors["L"] = true;
+        checkAllColors["O"] = true;
+        checkAllColors["M"] = true;
+        checkAllColors["P"] = true;
+        checkAllColors["GR"] = true;
+        checkAllColors["G"] = true;
+        checkAllColors["S"] = true;
+        checkAllClasses["A"] = true;
+        checkAllClasses["B"] = true;
+        checkAllClasses["C"] = true;
+        console.log("here");
+        this.setState(function(prevState, props) {
+          return {
+            displayColors: checkAllColors,
+            displayClass: checkAllClasses
+            };
+        });
+        break;
+        default:
+        let uncheckAllColorsDefault = this.state.displayColors;
+        let uncheckAllClassesDefault = this.state.displayClass;
+        uncheckAllColorsDefault["F"] = false;
+        uncheckAllColorsDefault["R"] = false;
+        uncheckAllColorsDefault["B"] = false;
+        uncheckAllColorsDefault["L"] = false;
+        uncheckAllColorsDefault["O"] = false;
+        uncheckAllColorsDefault["M"] = false;
+        uncheckAllColorsDefault["P"] = false;
+        uncheckAllColorsDefault["GR"] = false;
+        uncheckAllColorsDefault["G"] = false;
+        uncheckAllColorsDefault["S"] = false;
+        uncheckAllClassesDefault["A"] = false;
+        uncheckAllClassesDefault["B"] = false;
+        uncheckAllClassesDefault["C"] = false;
+        this.setState(function(prevState, props) {
+          return {
+            displayColors: uncheckAllColorsDefault,
+            displayClass: uncheckAllClassesDefault
+            };
+        });
+      }
     }
 
     handleInputDirectionChange(event) {
@@ -346,13 +420,21 @@ class MuscleContainer extends Component{
                 </div>
               </div>
               <br></br>
-              <div class="swapDirection">
-                <div class="swapButton">
-                  Show back
-                  <input type="checkbox"
-                    name="swapButton"
-                    onChange={this.handleInputDirectionChange}
-                    checked={this.state.displayDirection} />
+              <div id="massFilter">
+                <div class="swapDirection">
+                  <div class="swapButton">
+                    Show back
+                    <input type="checkbox"
+                      name="swapButton"
+                      onChange={this.handleInputDirectionChange}
+                      checked={this.state.displayDirection} />
+                  </div>
+                </div>
+                <div id="uncheckAll">
+                  <input id="uncheckInput" type="button" value="Uncheck all" onClick={this.handleCheckAll}/>
+                </div>
+                <div id="checkAll">
+                  <input id="checkInput" type="button" value="Check All" onClick={this.handleCheckAll}/>
                 </div>
               </div>
               <br></br>
