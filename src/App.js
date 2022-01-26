@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <div id="muscleContainer">
-        <div id="credit">Credit to Brian Bonanno for classification and name inforamtion</div>
+        <div id="credit">Credit to Brian Bonanno for classification and name information</div>
       <Tabs>
         <div className="tab" label="Master Checklist">
         </div>
