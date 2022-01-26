@@ -1,7 +1,7 @@
 {
 	"1": {
 		"name": "Muscle Man",
-		"class": {
+		"classes": {
 			"A": ["P"],
 			"B": ["G", "S"],
 			"C": ["F", "R", "B", "L", "O", "GR"]
@@ -9,7 +9,7 @@
 	},
 	"2": {
 		"name": "Terri-Bull",
-		"class": {
+		"classes": {
 			"A": ["P"],
 			"B": ["S", "B", "L", "O"],
 			"C": ["F", "R"]
@@ -17,7 +17,7 @@
 	},
 	"3": {
 		"name": "Sunshine(C)",
-		"class": {
+		"classes": {
 			"A": ["P"],
 			"B": ["S"],
 			"C": ["F", "R", "G", "B", "L", "O"]
@@ -25,53 +25,53 @@
 	},
 	"4": {
 		"name": "Kani Besu",
-		"class": {
+		"classes": {
 			"B": ["B"],
 			"C": ["F", "R", "G", "O"]
 		}
 	},
 	"5": {
 		"name": "Planet Man",
-		"class": {
+		"classes": {
 			"C": ["F", "R", "G", "P", "L"]
 		}
 	},
 	"6": {
 		"name": "Erimaki Tokage",
-		"class": {
+		"classes": {
 			"C": ["F", "R", "G", "P", "L"]
 		}
 	},
 	"7": {
 		"name": "Puyo Puyo",
-		"class": {
+		"classes": {
 			"B": ["B"],
 			"C": ["F", "R", "G", "O"]
 		}
 	},
 	"8": {
 		"name": "Shishikababu",
-		"class": {
+		"classes": {
 			"B": ["B"],
 			"C": ["F", "R", "G", "O"]
 		}
 	},
 	"9": {
 		"name": "Wakusei Barukan",
-		"class": {
+		"classes": {
 			"C": ["F", "B", "L", "O", "M"]
 		}
 	},
 	"10": {
 		"name": "Jessie Maybe",
-		"class": {
+		"classes": {
 			"A": ["R"],
 			"C": ["F", "G", "P", "B", "L", "O"]
 		}
 	},
 	"11": {
 		"name": "Hidora King",
-		"class": {
+		"classes": {
 			"A": ["B"],
 			"B": ["G", "O", "M"],
 			"C": ["F", "P", "S"]
@@ -79,27 +79,27 @@
 	},
 	"12": {
 		"name": "Oil Man",
-		"class": {
+		"classes": {
 			"C": ["F", "R", "G", "P", "L"]
 		}
 	},
 	"13": {
 		"name": "King Cobra",
-		"class": {
+		"classes": {
 			"A": ["R"],
 			"C": ["F", "G", "P", "B", "L", "O"]
 		}
 	},
 	"14": {
 		"name": "Robin Mask",
-		"class": {
+		"classes": {
 			"B": ["P", "S", "B"],
 			"C": ["F", "L", "O", "M"]
 		}
 	},
 	"15": {
 		"name": "Sunshine(D)",
-		"class": {
+		"classes": {
 			"A": ["P"],
 			"B": ["B", "M"],
 			"C": ["F", "R", "G", "S"]
@@ -107,7 +107,7 @@
 	},
 	"16": {
 		"name": "Neptuneman(B)",
-		"class": {
+		"classes": {
 			"A": ["P"],
 			"B": ["M"],
 			"C": ["F", "R", "G", "S", "B"]
@@ -115,21 +115,21 @@
 	},
 	"17": {
 		"name": "Kinnikuman(B)",
-		"class": {
+		"classes": {
 			"A": ["M"],
 			"C": ["F", "R", "G", "P", "S", "B"]
 		}
 	},
 	"18": {
 		"name": "Daiyaman",
-		"class": {
+		"classes": {
 			"A": ["B"],
 			"C": ["F", "R", "P", "O", "M"]
 		}
 	},
 	"19": {
 		"name": "Black Killer",
-		"class": {
+		"classes": {
 			"A": ["P", "L"],
 			"B": ["S", "B"],
 			"C": ["F", "R", "O", "M"]
@@ -137,7 +137,7 @@
 	},
 	"20": {
 		"name": "Kinniku Daiou",
-		"class": {
+		"classes": {
 			"A": ["L"],
 			"B": ["P", "S", "O"],
 			"C": ["F", "R", "G", "M"]
@@ -145,14 +145,14 @@
 	},
 	"21": {
 		"name": "Akuma Shogun(A)",
-		"class": {
+		"classes": {
 			"A": ["M"],
 			"C": ["F", "R", "G", "P", "S", "B"]
 		}
 	},
 	"22": {
 		"name": "The Manriki",
-		"class": {
+		"classes": {
 			"A": ["B"],
 			"B": ["G", "M"],
 			"C": ["F", "P", "S", "O"]
@@ -160,7 +160,7 @@
 	},
 	"23": {
 		"name": "Iwao",
-		"class": {
+		"classes": {
 			"A": ["L"],
 			"B": ["P", "S", "O"],
 			"C": ["F", "R", "G", "M"]
@@ -168,42 +168,42 @@
 	},
 	"24": {
 		"name": "Cubeman",
-		"class": {
+		"classes": {
 			"A": ["R"],
 			"C": ["F", "G", "P", "B", "L", "O"]
 		}
 	},
 	"25": {
 		"name": "Price Kamehame",
-		"class": {
+		"classes": {
 			"A": ["R"],
 			"C": ["F", "G", "P", "B", "L", "O"]
 		}
 	},
 	"26": {
 		"name": "The Ninja(A)",
-		"class": {
+		"classes": {
 			"A": ["M"],
 			"C": ["F", "R", "G", "P", "S", "B"]
 		}
 	},
 	"27": {
 		"name": "Ashuraman(A)",
-		"class": {
+		"classes": {
 			"B": ["P", "S"],
 			"C": ["F", "R", "G", "B", "L"]
 		}
 	},
 	"28": {
 		"name": "John Stimboard",
-		"class": {
+		"classes": {
 			"B": ["P", "S"],
 			"C": ["F", "R", "G", "B", "L"]
 		}
 	},
 	"29": {
 		"name": "Terryman(C)",
-		"class": {
+		"classes": {
 			"A": ["P"],
 			"B": ["B", "M"],
 			"C": ["F", "R", "G", "S"]
@@ -211,14 +211,14 @@
 	},
 	"30": {
 		"name": "Keyman",
-		"class": {
+		"classes": {
 			"B": ["P", "S", "L"],
 			"C": ["F", "B", "O", "M"]
 		}
 	},
 	"31": {
 		"name": "Terryman(A)",
-		"class": {
+		"classes": {
 			"A": ["L"],
 			"B": ["P", "S"],
 			"C": ["F", "R", "G", "O", "M"]
@@ -226,14 +226,14 @@
 	},
 	"32": {
 		"name": "Kington",
-		"class": {
+		"classes": {
 			"B": ["S"],
 			"C": ["F", "R", "P", "O"]
 		}
 	},
 	"33": {
 		"name": "Skull Bozu",
-		"class": {
+		"classes": {
 			"A": ["L"],
 			"B": ["P", "S", "O", "M"],
 			"C": ["F", "R", "G"]
@@ -241,14 +241,14 @@
 	},
 	"34": {
 		"name": "Nokogira Man",
-		"class": {
-			"B": ["S"],
-			"C": ["F", "R", "P", "O"]
+		"classes": {
+			"B": ["P", "LB"],
+			"C": ["F", "S", "B", "O", "M"]
 		}
 	},
 	"35": {
 		"name": "Warsman(A)",
-		"class": {
+		"classes": {
 			"A": ["L"],
 			"B": ["P", "S", "M"],
 			"C": ["F", "R", "G", "O"]
@@ -256,35 +256,35 @@
 	},
 	"36": {
 		"name": "Kinkotsuman",
-		"class": {
+		"classes": {
 			"A": ["L"],
-			"B": ["G", "S", "O", "M"],
+			"B": ["P", "G", "S", "O", "M"],
 			"C": ["F", "R"]
 		}
 	},
 	"37": {
 		"name": "Dynamite Piper",
-		"class": {
+		"classes": {
 			"C": ["F", "R", "G", "S", "L"]
 		}
 	},
 	"38": {
 		"name": "Tileman",
-		"class": {
+		"classes": {
 			"A": ["R"],
 			"C": ["F", "G", "P", "B", "L", "O"]
 		}
 	},
 	"39": {
 		"name": "Sunshine(A)",
-		"class": {
+		"classes": {
 			"B": ["S", "P"],
 			"C": ["F", "R", "G", "B", "L"]
 		}
 	},
 	"40": {
 		"name": "Kendaman(B)",
-		"class": {
+		"classes": {
 			"A": ["P", "B"],
 			"B": ["M"],
 			"C": ["F", "R", "G", "S"]
@@ -292,7 +292,7 @@
 	},
 	"41": {
 		"name": "Beauty Rhodes",
-		"class": {
+		"classes": {
 			"A": ["P"],
 			"B": ["S"],
 			"C": ["F", "R", "G", "B", "L"]
@@ -300,7 +300,7 @@
 	},
 	"42": {
 		"name": "Goremuman",
-		"class": {
+		"classes": {
 			"A": ["G"],
 			"B": ["S", "B"],
 			"C": ["F", "P", "L", "M"]
@@ -308,27 +308,27 @@
 	},
 	"43": {
 		"name": "Curry Cook",
-		"class": {
+		"classes": {
 			"A": ["M"],
 			"C": ["F", "R", "G", "P", "S", "B"]
 		}
 	},
 	"44": {
 		"name": "Benkiman(A)",
-		"class": {
+		"classes": {
 			"A": ["M"],
 			"C": ["F", "R", "G", "P", "S", "B"]
 		}
 	},
 	"45": {
 		"name": "Springman",
-		"class": {
+		"classes": {
 			"C": ["F", "R", "S", "B", "L", "M"]
 		}
 	},
 	"46": {
 		"name": "Robin Mask(A)",
-		"class": {
+		"classes": {
 			"A": ["L"],
 			"B": ["P", "S", "O"],
 			"C": ["F", "R", "G", "M"]
@@ -336,14 +336,14 @@
 	},
 	"47": {
 		"name": "Linchou",
-		"class": {
+		"classes": {
 			"A": ["B"],
 			"C": ["F", "R", "P", "O", "M"]
 		}
 	},
 	"48": {
 		"name": "Teapack Man",
-		"class": {
+		"classes": {
 			"A": ["R"],
 			"B": ["L"],
 			"C": ["F", "G", "P", "B", "O"]
@@ -351,14 +351,14 @@
 	},
 	"49": {
 		"name": "Black Shadow",
-		"class": {
+		"classes": {
 			"A": ["R"],
 			"C": ["F", "G", "P", "B", "L", "O"]
 		}
 	},
 	"50": {
 		"name": "Hawkman(A)",
-		"class": {
+		"classes": {
 			"A": ["G"],
 			"B": ["B", "L", "O"],
 			"C": ["F", "R", "P"]
@@ -366,20 +366,20 @@
 	},
 	"51": {
 		"name": "Canadianman",
-		"class": {
+		"classes": {
 			"A": ["R"],
 			"C": ["F", "G", "P", "B", "L", "O"]
 		}
 	},
 	"52": {
 		"name": "Jawsman",
-		"class": {
+		"classes": {
 			"C": ["F", "R", "G", "P", "L"]
 		}
 	},
 	"53": {
 		"name": "Junkman(A)",
-		"class": {
+		"classes": {
 			"A": ["R"],
 			"B": ["L"],
 			"C": ["F", "G", "P", "B", "O"]
@@ -387,21 +387,21 @@
 	},
 	"54": {
 		"name": "The Mountain",
-		"class": {
+		"classes": {
 			"A": ["M"],
 			"C": ["F", "R", "G", "P", "S", "B"]
 		}
 	},
 	"55": {
 		"name": "Skyman",
-		"class": {
+		"classes": {
 			"B": ["P", "S", "B", "L"],
 			"C": ["F", "R", "G"]
 		}
 	},
 	"56": {
 		"name": "Neptune King",
-		"class": {
+		"classes": {
 			"A": ["P"],
 			"B": ["B", "M"],
 			"C": ["F", "R", "G", "S"]
@@ -409,26 +409,26 @@
 	},
 	"57": {
 		"name": "Kinnikuman Great",
-		"class": {
+		"classes": {
 			"C": ["F", "R", "G", "P", "L"]
 		}
 	},
 	"58": {
 		"name": "Buffaloman",
-		"class": {
+		"classes": {
 			"B": ["P", "S", "B", "L"],
 			"C": ["F", "O", "M"]
 		}
 	},
 	"59": {
 		"name": "Warsman(B)",
-		"class": {
+		"classes": {
 			"C": ["F", "R", "G", "P", "L"]
 		}
 	},
 	"60": {
 		"name": "Mito(A)",
-		"class": {
+		"classes": {
 			"A": ["P", "S", "L"],
 			"B": ["O", "M"],
 			"C": ["F", "R", "G"]
@@ -436,7 +436,7 @@
 	},
 	"61": {
 		"name": "Kinnikuman(A)",
-		"class": {
+		"classes": {
 			"A": ["L"],
 			"B": ["P", "S"],
 			"C": ["F", "R", "G", "O", "M"]
@@ -444,20 +444,20 @@
 	},
 	"62": {
 		"name": "The Sheik",
-		"class": {
+		"classes": {
 			"B": ["B"],
 			"C": ["F", "R", "G", "O"]
 		}
 	},
 	"63": {
 		"name": "Goriki",
-		"class": {
+		"classes": {
 			"C": ["F", "R", "G", "P", "L"]
 		}
 	},
 	"64": {
 		"name": "Sunshine(B)",
-		"class": {
+		"classes": {
 			"A": ["S"],
 			"B": ["O"],
 			"C": ["F", "G", "P", "B", "L"]
@@ -465,28 +465,28 @@
 	},
 	"65": {
 		"name": "Crystalman",
-		"class": {
+		"classes": {
 			"B": ["P"],
 			"C": ["F", "S", "B", "L"]
 		}
 	},
 	"66": {
 		"name": "Mr. Barracuda(A)",
-		"class": {
+		"classes": {
 			"B": ["P"],
 			"C": ["F", "S", "B", "L"]
 		}
 	},
 	"67": {
 		"name": "Pentagon",
-		"class": {
+		"classes": {
 			"A": ["M"],
 			"C": ["F", "R", "G", "P", "S", "B"]
 		}
 	},
 	"68": {
 		"name": "Okutopasu Dragon",
-		"class": {
+		"classes": {
 			"A": ["R"],
 			"B": ["P", "S", "M"],
 			"C": ["F", "B", "L", "O"]
@@ -494,20 +494,20 @@
 	},
 	"69": {
 		"name": "Specialman",
-		"class": {
+		"classes": {
 			"C": ["F", "P", "S", "B", "L"]
 		}
 	},
 	"70": {
 		"name": "Ashuraman(B)",
-		"class": {
+		"classes": {
 			"B": ["P"],
 			"C": ["F", "R", "G", "S", "L", "O"]
 		}
 	},
 	"71": {
 		"name": "Neptuneman(A)",
-		"class": {
+		"classes": {
 			"A": ["B"],
 			"B": ["O"],
 			"C": ["F", "R", "S", "L"]
@@ -515,7 +515,7 @@
 	},
 	"72": {
 		"name": "Sunigator(A)",
-		"class": {
+		"classes": {
 			"A": ["S"],
 			"B": ["O"],
 			"C": ["F", "G", "P", "B", "L"]
@@ -523,20 +523,20 @@
 	},
 	"73": {
 		"name": "Mairudoman",
-		"class": {
+		"classes": {
 			"A": ["B"],
 			"C": ["F", "R", "S", "L", "O"]
 		}
 	},
 	"74": {
 		"name": "Spray Majin",
-		"class": {
+		"classes": {
 			"C": ["F", "R", "G", "P", "L"]
 		}
 	},
 	"75": {
 		"name": "Abdullah",
-		"class": {
+		"classes": {
 			"A": ["B"],
 			"B": ["S", "L"],
 			"C": ["F", "R", "O"]
@@ -544,7 +544,7 @@
 	},
 	"76": {
 		"name": "Eraginesu",
-		"class": {
+		"classes": {
 			"A": ["S"],
 			"B": ["O"],
 			"C": ["F", "G", "P", "B", "L"]
@@ -552,7 +552,7 @@
 	},
 	"77": {
 		"name": "Ashuraman no Sensei",
-		"class": {
+		"classes": {
 			"A": ["P", "S"],
 			"B": ["G", "S", "M"],
 			"C": ["F", "R", "B"]
@@ -560,32 +560,32 @@
 	},
 	"78": {
 		"name": "Vikingman",
-		"class": {
+		"classes": {
 			"B": ["S"],
 			"C": ["F", "R", "G", "P", "L", "O"]
 		}
 	},
 	"79": {
 		"name": "Hammerhead",
-		"class": {
+		"classes": {
 			"C": ["F", "R", "G", "P", "S", "O", "M"]
 		}
 	},
 	"80": {
 		"name": "Paper Miira",
-		"class": {
+		"classes": {
 			"C": ["F", "G", "B", "L", "O"]
 		}
 	},
 	"81": {
 		"name": "Amelman",
-		"class": {
+		"classes": {
 			"C": ["F", "R", "G", "P", "S", "O", "M"]
 		}
 	},
 	"82": {
 		"name": "Ramenman(A)",
-		"class": {
+		"classes": {
 			"A": ["L"],
 			"B": ["P", "S", "O", "M"],
 			"C": ["F", "R", "G"]
@@ -593,20 +593,20 @@
 	},
 	"83": {
 		"name": "Hang Killer",
-		"class": {
+		"classes": {
 			"B": ["B"],
 			"C": ["F", "R", "S", "L", "M"]
 		}
 	},
 	"84": {
 		"name": "Snakeman",
-		"class": {
+		"classes": {
 			"C": ["F", "R", "G", "P", "S", "L", "O"]
 		}
 	},
 	"85": {
 		"name": "Kinnikuman Zebra(A)",
-		"class": {
+		"classes": {
 			"A": ["R", "S"],
 			"B": ["L", "O"],
 			"C": ["F", "B", "M"]
@@ -614,53 +614,53 @@
 	},
 	"86": {
 		"name": "De Bellman",
-		"class": {
+		"classes": {
 			"A": ["B"],
 			"C": ["F", "R", "P", "O", "M"]
 		}
 	},
 	"87": {
 		"name": "Magnitude Ichiman",
-		"class": {
+		"classes": {
 			"C": ["F", "G", "B", "L", "O"]
 		}
 	},
 	"88": {
 		"name": "Armstrong",
-		"class": {
+		"classes": {
 			"C": ["F", "R", "S", "B", "L", "M"]
 		}
 	},
 	"89": {
 		"name": "Watchman",
-		"class": {
+		"classes": {
 			"C": ["F", "R", "S", "B", "L", "M"]
 		}
 	},
 	"90": {
 		"name": "Combatman",
-		"class": {
+		"classes": {
 			"A": ["S"],
 			"C": ["F", "G", "P", "B", "L", "O"]
 		}
 	},
 	"91": {
 		"name": "Cyborg SW #26",
-		"class": {
+		"classes": {
 			"B": ["S"],
 			"C": ["F", "R", "G", "P", "L", "O"]
 		}
 	},
 	"92": {
 		"name": "Akuma Kishi",
-		"class": {
+		"classes": {
 			"A": ["B"],
 			"C": ["F", "R", "P", "O", "M"]
 		}
 	},
 	"93": {
 		"name": "Buffaloman(A)",
-		"class": {
+		"classes": {
 			"A": ["P"],
 			"B": ["S"],
 			"C": ["F", "R", "G", "B", "L"]
@@ -668,73 +668,73 @@
 	},
 	"94": {
 		"name": "Kintaman",
-		"class": {
+		"classes": {
 			"C": ["F", "G", "B", "L", "O"]
 		}
 	},
 	"95": {
 		"name": "Big Radial",
-		"class": {
+		"classes": {
 			"C": ["F", "R", "G", "P", "S", "L", "O"]
 		}
 	},
 	"96": {
 		"name": "The Ninja(B)",
-		"class": {
+		"classes": {
 			"C": ["F", "P", "S", "B", "L", "O", "M"]
 		}
 	},
 	"97": {
 		"name": "Condora",
-		"class": {
+		"classes": {
 			"A": ["B"],
 			"C": ["F", "R", "P", "O", "M"]
 		}
 	},
 	"98": {
 		"name": "Dark Nisei",
-		"class": {
+		"classes": {
 			"C": ["F", "G", "P", "O", "M"]
 		}
 	},
 	"99": {
 		"name": "The Mari",
-		"class": {
+		"classes": {
 			"B": ["G"],
 			"C": ["F", "P", "O", "M"]
 		}
 	},
 	"100": {
 		"name": "Bam Bam Ji",
-		"class": {
+		"classes": {
 			"B": ["P"],
 			"C": ["F", "R", "S", "B", "L", "O"]
 		}
 	},
 	"101": {
 		"name": "Godo Shisa",
-		"class": {
+		"classes": {
 			"B": ["P", "B"],
 			"C": ["F", "R", "S", "L", "O"]
 		}
 	},
 	"102": {
 		"name": "Mapman",
-		"class": {
+		"classes": {
 			"B": ["R", "P", "S", "B", "L"],
 			"C": ["F", "O"]
 		}
 	},
 	"103": {
 		"name": "Black Hole",
-		"class": {
+		"classes": {
 			"A": ["M"],
 			"C": ["F", "R", "G", "P", "S", "B"]
 		}
 	},
 	"104": {
 		"name": "Buka(B)",
-		"class": {
+		"classes": {
 			"A": ["R", "M"],
 			"B": ["P"],
 			"C": ["F", "S", "B", "L", "O"]
@@ -742,14 +742,14 @@
 	},
 	"105": {
 		"name": "Buffaloman(D)",
-		"class": {
+		"classes": {
 			"B": ["G"],
 			"C": ["F", "P", "B", "M"]
 		}
 	},
 	"106": {
 		"name": "Aiansueto Kita Chojin",
-		"class": {
+		"classes": {
 			"A": ["P", "S"],
 			"B": ["R", "G"],
 			"C": ["F", "B", "O", "M"]
@@ -757,7 +757,7 @@
 	},
 	"107": {
 		"name": "Sunshine(E)",
-		"class": {
+		"classes": {
 			"A": ["P", "S"],
 			"B": ["G", "O", "M"],
 			"C": ["F", "R", "B"]
@@ -765,7 +765,7 @@
 	},
 	"108": {
 		"name": "Rikishiman Wolfman(B)",
-		"class": {
+		"classes": {
 			"A": ["R", "S"],
 			"B": ["G", "L", "O"],
 			"C": ["F", "B", "M"]
@@ -773,7 +773,7 @@
 	},
 	"109": {
 		"name": "Ashuraman no Chichi",
-		"class": {
+		"classes": {
 			"A": ["P", "S"],
 			"B": ["G", "O"],
 			"C": ["F", "R", "B", "M"]
@@ -781,22 +781,22 @@
 	},
 	"110": {
 		"name": "Kinnikuman(F)",
-		"class": {
-			"A": ["R", "A"],
+		"classes": {
+			"A": ["R", "S"],
 			"B": ["G", "L", "O"],
 			"C": ["F", "B", "M"]
 		}
 	},
 	"111": {
 		"name": "Akuma Shogun(B)",
-		"class": {
+		"classes": {
 			"B": ["P", "S", "L"],
 			"C": ["F", "B", "O", "M"]
 		}
 	},
 	"112": {
 		"name": "Sunigator(D)",
-		"class": {
+		"classes": {
 			"A": ["R", "S"],
 			"B": ["G", "L", "O"],
 			"C": ["F", "B", "M"]
@@ -804,7 +804,7 @@
 	},
 	"113": {
 		"name": "Kinnikuman Super Phoenix(A)",
-		"class": {
+		"classes": {
 			"A": ["R", "S"],
 			"B": ["G", "L", "O"],
 			"C": ["F", "B", "M"]
@@ -812,20 +812,20 @@
 	},
 	"114": {
 		"name": "Pandaman",
-		"class": {
+		"classes": {
 			"A": ["B"],
 			"C": ["F", "R", "P", "O", "M"]
 		}
 	},
 	"115": {
 		"name": "Kiki Jin",
-		"class": {
+		"classes": {
 			"C": ["F", "G", "B", "L", "O"]
 		}
 	},
 	"116": {
 		"name": "Kinnikuman Soldier(A)",
-		"class": {
+		"classes": {
 			"A": ["R", "S"],
 			"B": ["G", "L", "O"],
 			"C": ["F", "B", "M"]
@@ -833,46 +833,46 @@
 	},
 	"117": {
 		"name": "Rollerman",
-		"class": {
+		"classes": {
 			"B": ["S", "L", "M"],
 			"C": ["F", "R", "P", "B"]
 		}
 	},
 	"118": {
 		"name": "ICBM",
-		"class": {
+		"classes": {
 			"B": ["P"],
 			"C": ["F", "R", "S", "B", "L", "M"]
 		}
 	},
 	"119": {
 		"name": "Bermuda III(A)",
-		"class": {
+		"classes": {
 			"B": ["S"],
 			"C": ["F", "R", "P", "O"]
 		}
 	},
 	"120": {
 		"name": "Sabotenman",
-		"class": {
+		"classes": {
 			"C": ["F", "R", "P", "S", "B"]
 		}
 	},
 	"121": {
 		"name": "Hantenguman",
-		"class": {
+		"classes": {
 			"C": ["F", "R", "P", "S", "O"]
 		}
 	},
 	"122": {
 		"name": "Kinnikuman(C)",
-		"class": {
+		"classes": {
 			"C": ["F", "R", "G", "B", "O"]
 		}
 	},
 	"123": {
 		"name": "Geronimo(A)",
-		"class": {
+		"classes": {
 			"A": ["P"],
 			"B": ["S", "L"],
 			"C": ["F", "R", "G", "B"]
@@ -880,14 +880,14 @@
 	},
 	"124": {
 		"name": "Foxman",
-		"class": {
+		"classes": {
 			"B": ["S", "L", "M"],
 			"C": ["F", "R", "P", "B"]
 		}
 	},
 	"125": {
 		"name": "Buka(A)",
-		"class": {
+		"classes": {
 			"A": ["R", "M"],
 			"B": ["P", "L"],
 			"C": ["F", "S", "B", "O"]
@@ -895,41 +895,41 @@
 	},
 	"126": {
 		"name": "Kenkaman",
-		"class": {
+		"classes": {
 			"B": ["P", "S", "M"],
 			"C": ["F", "R", "B", "L"]
 		}
 	},
 	"127": {
 		"name": "Junkman(B)",
-		"class": {
+		"classes": {
 			"B": ["R"],
 			"C": ["F", "P", "S", "O"]
 		}
 	},
 	"128": {
 		"name": "Smileman",
-		"class": {
+		"classes": {
 			"C": ["F", "R", "P", "S", "B"]
 		}
 	},
 	"129": {
 		"name": "Ashuraman(C)",
-		"class": {
+		"classes": {
 			"B": ["P"],
 			"C": ["F", "R", "S", "B"]
 		}
 	},
 	"130": {
 		"name": "Mirion Hell",
-		"class": {
+		"classes": {
 			"B": ["P"],
 			"C": ["F", "S", "B", "L"]
 		}
 	},
 	"131": {
 		"name": "Ukon",
-		"class": {
+		"classes": {
 			"A": ["R"],
 			"B": ["S", "L", "M"],
 			"C": ["F", "P", "B", "O"]
@@ -937,13 +937,13 @@
 	},
 	"132": {
 		"name": "Screw Kid(A)",
-		"class": {
+		"classes": {
 			"C": ["F", "R", "G", "P", "S", "O", "M"]
 		}
 	},
 	"133": {
 		"name": "Buka(C)",
-		"class": {
+		"classes": {
 			"A": ["R"],
 			"B": ["P", "L", "M"],
 			"C": ["F", "S", "B", "O"]
@@ -951,7 +951,7 @@
 	},
 	"134": {
 		"name": "Ameragu Chojin no Bosu",
-		"class": {
+		"classes": {
 			"A": ["R", "M"],
 			"B": ["P"],
 			"C": ["F", "S", "B", "L", "O"]
@@ -959,7 +959,7 @@
 	},
 	"135": {
 		"name": "Kyoaku Chojin(B)",
-		"class": {
+		"classes": {
 			"A": ["R", "M"],
 			"B": ["P"],
 			"C": ["F", "S", "B", "L", "O"]
@@ -967,7 +967,7 @@
 	},
 	"136": {
 		"name": "Harigorasu",
-		"class": {
+		"classes": {
 			"A": ["R", "M"],
 			"B": ["P"],
 			"C": ["F", "S", "B", "L", "O"]
@@ -975,13 +975,13 @@
 	},
 	"137": {
 		"name": "Bermuda III(C)",
-		"class": {
+		"classes": {
 			"C": ["F", "R", "P", "S", "O"]
 		}
 	},
 	"138": {
 		"name": "Personalman",
-		"class": {
+		"classes": {
 			"A": ["P"],
 			"B": ["R", "S"],
 			"C": ["F", "G", "B", "L", "O"]
@@ -989,7 +989,7 @@
 	},
 	"139": {
 		"name": "MokoSeijin",
-		"class": {
+		"classes": {
 			"A": ["R"],
 			"B": ["P", "M"],
 			"C": ["F", "S", "B", "L", "O"]
@@ -997,7 +997,7 @@
 	},
 	"140": {
 		"name": "Terryman(B)",
-		"class": {
+		"classes": {
 			"A": ["R"],
 			"B": ["P", "M"],
 			"C": ["F", "S", "B", "L", "O"]
@@ -1005,21 +1005,21 @@
 	},
 	"141": {
 		"name": "Kinnikuman(E)",
-		"class": {
+		"classes": {
 			"B": ["P", "S", "M"],
 			"C": ["F", "R", "B", "L"]
 		}
 	},
 	"142": {
 		"name": "Bermuda III(B)",
-		"class": {
+		"classes": {
 			"B": ["S"],
 			"C": ["F", "R", "P", "O"]
 		}
 	},
 	"143": {
 		"name": "Black Night",
-		"class": {
+		"classes": {
 			"A": ["P", "L"],
 			"B": ["B"],
 			"C": ["F", "R", "S", "O", "M"]
@@ -1027,13 +1027,13 @@
 	},
 	"144": {
 		"name": "Mr. America",
-		"class": {
+		"classes": {
 			"C": ["F", "R", "G", "P", "S", "O", "M"]
 		}
 	},
 	"145": {
 		"name": "Black Tomahawk",
-		"class": {
+		"classes": {
 			"A": ["P", "L"],
 			"B": ["S", "B"],
 			"C": ["F", "R", "O", "M"]
@@ -1041,27 +1041,27 @@
 	},
 	"146": {
 		"name": "Playerman",
-		"class": {
+		"classes": {
 			"B": ["O"],
 			"C": ["F", "B", "L", "M"]
 		}
 	},
 	"147": {
 		"name": "Kendaman(B)",
-		"class": {
+		"classes": {
 			"C": ["F", "B", "L", "O", "M"]
 		}
 	},
 	"148": {
 		"name": "Furashya Balloon",
-		"class": {
+		"classes": {
 			"B": ["G"],
 			"C": ["F", "P", "O", "M"]
 		}
 	},
 	"149": {
 		"name": "Screw Kid(B)",
-		"class": {
+		"classes": {
 			"A": ["P"],
 			"B": ["R", "S"],
 			"C": ["F", "G", "B", "L", "O", "GR"]
@@ -1069,14 +1069,14 @@
 	},
 	"150": {
 		"name": "Apollo the Great",
-		"class": {
+		"classes": {
 			"B": ["G"],
 			"C": ["F", "P", "O", "M"]
 		}
 	},
 	"151": {
 		"name": "Kanderaman",
-		"class": {
+		"classes": {
 			"A": ["P"],
 			"B": ["R", "S"],
 			"C": ["F", "G", "B", "L", "O", "GR"]
@@ -1084,7 +1084,7 @@
 	},
 	"152": {
 		"name": "Mongolman(B)",
-		"class": {
+		"classes": {
 			"A": ["P"],
 			"B": ["R", "G", "S"],
 			"C": ["F", "B", "L", "O", "GR"]
@@ -1092,7 +1092,7 @@
 	},
 	"153": {
 		"name": "Sunigator Shotai (The Claw)",
-		"class": {
+		"classes": {
 			"A": ["P"],
 			"B": ["R", "S"],
 			"C": ["F", "G", "B", "L", "O"]
@@ -1100,7 +1100,7 @@
 	},
 	"154": {
 		"name": "Anmonaitosu",
-		"class": {
+		"classes": {
 			"A": ["P"],
 			"B": ["R", "S"],
 			"C": ["F", "G", "B", "L", "O", "GR"]
@@ -1108,7 +1108,7 @@
 	},
 	"155": {
 		"name": "Shyaneruman",
-		"class": {
+		"classes": {
 			"A": ["P"],
 			"B": ["R", "S", "O"],
 			"C": ["F", "G", "B", "L"]
@@ -1116,56 +1116,56 @@
 	},
 	"156": {
 		"name": "Wolfman(A)",
-		"class": {
+		"classes": {
 			"A": ["P", "S"],
 			"C": ["F", "R", "G", "B", "L"]
 		}
 	},
 	"157": {
 		"name": "Black King",
-		"class": {
+		"classes": {
 			"A": ["P", "L"],
 			"C": ["F", "R", "S", "B", "O", "M"]
 		}
 	},
 	"158": {
 		"name": "Bazookara",
-		"class": {
+		"classes": {
 			"B": ["L"],
 			"C": ["F", "R", "G", "S"]
 		}
 	},
 	"159": {
 		"name": "Mr. Akiresu Mr. Achilles",
-		"class": {
+		"classes": {
 			"B": ["O"],
 			"C": ["F", "B", "L", "M"]
 		}
 	},
 	"160": {
 		"name": "Chavo Kerori",
-		"class": {
+		"classes": {
 			"B": ["L"],
 			"C": ["F", "R", "G", "S"]
 		}
 	},
 	"161": {
 		"name": "Atlantis",
-		"class": {
+		"classes": {
 			"A": ["M"],
 			"C": ["F", "R", "G", "P", "S", "B"]
 		}
 	},
 	"162": {
 		"name": "Nakano-San The Announcer",
-		"class": {
+		"classes": {
 			"B": ["L"],
 			"C": ["F", "R", "G", "S"]
 		}
 	},
 	"163": {
 		"name": "Mammothman",
-		"class": {
+		"classes": {
 			"A": ["G"],
 			"B": ["B", "L"],
 			"C": ["F", "R", "P", "O"]
@@ -1173,7 +1173,7 @@
 	},
 	"164": {
 		"name": "Kinnikuman Big Body(A)",
-		"class": {
+		"classes": {
 			"A": ["G"],
 			"B": ["B", "L", "O"],
 			"C": ["F", "R", "P"]
@@ -1181,14 +1181,14 @@
 	},
 	"165": {
 		"name": "Black Zumou",
-		"class": {
+		"classes": {
 			"A": ["S", "M"],
 			"C": ["F", "R", "G", "P"]
 		}
 	},
 	"166": {
 		"name": "Kinnikuman Mariposa(A)",
-		"class": {
+		"classes": {
 			"A": ["G"],
 			"B": ["B", "L"],
 			"C": ["F", "R", "P", "O"]
@@ -1196,14 +1196,14 @@
 	},
 	"167": {
 		"name": "Black Rain",
-		"class": {
+		"classes": {
 			"A": ["S", "M"],
 			"C": ["F", "R", "G", "P"]
 		}
 	},
 	"168": {
 		"name": "Mr. VTR",
-		"class": {
+		"classes": {
 			"A": ["G", "B"],
 			"B": ["L", "O"],
 			"C": ["F", "R", "P"]
@@ -1211,25 +1211,25 @@
 	},
 	"169": {
 		"name": "Benkiman(B)",
-		"class": {
+		"classes": {
 			"C": ["F", "R", "P", "S", "L", "O"]
 		}
 	},
 	"170": {
 		"name": "The Hunter",
-		"class": {
+		"classes": {
 			"C": ["F", "R", "P", "S", "L", "O"]
 		}
 	},
 	"171": {
 		"name": "Mixer Taite(A)",
-		"class": {
+		"classes": {
 			"C": ["F", "R", "P", "S", "L", "O"]
 		}
 	},
 	"172": {
 		"name": "Terryman(D)",
-		"class": {
+		"classes": {
 			"A": ["G"],
 			"B": ["S", "L"],
 			"C": ["F", "P", "B", "M"]
@@ -1237,13 +1237,13 @@
 	},
 	"173": {
 		"name": "Mr. Kamen(B)",
-		"class": {
+		"classes": {
 			"C": ["F", "R", "P", "S", "L", "O"]
 		}
 	},
 	"174": {
 		"name": "Ashuraman(E)",
-		"class": {
+		"classes": {
 			"A": ["G"],
 			"B": ["B", "L"],
 			"C": ["F", "P", "S", "M"]
@@ -1251,51 +1251,51 @@
 	},
 	"175": {
 		"name": "Leoparudon",
-		"class": {
+		"classes": {
 			"C": ["F", "R", "P", "S", "L", "O"]
 		}
 	},
 	"176": {
 		"name": "Heavy Metal",
-		"class": {
+		"classes": {
 			"C": ["F", "R", "P", "S", "L", "O"]
 		}
 	},
 	"177": {
 		"name": "Dai Ukon",
-		"class": {
+		"classes": {
 			"C": ["F", "R", "G", "P", "S", "B", "L"]
 		}
 	},
 	"178": {
 		"name": "Black Satan",
-		"class": {
+		"classes": {
 			"C": ["F", "R", "G", "P", "S", "B", "L"]
 		}
 	},
 	"179": {
 		"name": "Black Buffalo",
-		"class": {
+		"classes": {
 			"A": ["S", "M"],
 			"C": ["F", "R", "G", "P"]
 		}
 	},
 	"180": {
 		"name": "Black Knight",
-		"class": {
+		"classes": {
 			"B": ["L"],
 			"C": ["F", "R", "G", "P", "S", "B"]
 		}
 	},
 	"181": {
 		"name": "Black Bear",
-		"class": {
+		"classes": {
 			"C": ["F", "R", "G", "P", "S", "B", "L"]
 		}
 	},
 	"182": {
 		"name": "Mystery Partner",
-		"class": {
+		"classes": {
 			"A": ["G"],
 			"B": ["S", "B", "L"],
 			"C": ["F", "P", "M"]
@@ -1303,7 +1303,7 @@
 	},
 	"183": {
 		"name": "Pinchman",
-		"class": {
+		"classes": {
 			"A": ["G"],
 			"B": ["B", "L", "O"],
 			"C": ["F", "R", "P"]
@@ -1311,13 +1311,13 @@
 	},
 	"184": {
 		"name": "Geronimo(B)",
-		"class": {
+		"classes": {
 			"C": ["F", "R", "P", "S", "B"]
 		}
 	},
 	"185": {
 		"name": "King the Tons(A)",
-		"class": {
+		"classes": {
 			"A": ["G"],
 			"B": ["B", "L"],
 			"C": ["F", "P", "S", "M"]
@@ -1325,7 +1325,7 @@
 	},
 	"186": {
 		"name": "Kendaman(C)",
-		"class": {
+		"classes": {
 			"A": ["G"],
 			"B": ["M"],
 			"C": ["F", "P", "S", "B"]
@@ -1333,7 +1333,7 @@
 	},
 	"187": {
 		"name": "The Hawkman(B)",
-		"class": {
+		"classes": {
 			"A": ["G"],
 			"B": ["P", "S"],
 			"C": ["F", "B", "M"]
@@ -1341,13 +1341,13 @@
 	},
 	"188": {
 		"name": "Phoenixman",
-		"class": {
+		"classes": {
 			"C": ["F", "G", "P", "B", "M"]
 		}
 	},
 	"189": {
 		"name": "Mito(C)",
-		"class": {
+		"classes": {
 			"A": ["G"],
 			"B": ["S", "M"],
 			"C": ["F", "P", "B"]
@@ -1355,14 +1355,14 @@
 	},
 	"190": {
 		"name": "Gan Satan",
-		"class": {
+		"classes": {
 			"A": ["G"],
 			"C": ["F", "P", "S", "B", "M"]
 		}
 	},
 	"191": {
 		"name": "Satan King",
-		"class": {
+		"classes": {
 			"A": ["G"],
 			"B": ["P", "M"],
 			"C": ["F", "S", "B"]
@@ -1370,51 +1370,51 @@
 	},
 	"192": {
 		"name": "Tenjokai Chojin no Kami",
-		"class": {
+		"classes": {
 			"C": ["F", "G", "P", "B", "M"]
 		}
 	},
 	"193": {
 		"name": "Cobra Satan",
-		"class": {
+		"classes": {
 			"C": ["F", "G", "P", "S", "O", "M"]
 		}
 	},
 	"194": {
 		"name": "Haniwa Satan",
-		"class": {
+		"classes": {
 			"C": ["F", "G", "P", "S", "O", "M"]
 		}
 	},
 	"195": {
 		"name": "Sunshine(F)",
-		"class": {
+		"classes": {
 			"B": ["R", "S", "B", "O", "M"],
 			"C": ["F", "P"]
 		}
 	},
 	"196": {
 		"name": "Nusuto George",
-		"class": {
+		"classes": {
 			"C": ["F", "G", "P", "B", "M"]
 		}
 	},
 	"197": {
 		"name": "Robin Mask(D)",
-		"class": {
+		"classes": {
 			"B": ["R", "O", "M"],
 			"C": ["F", "P", "S", "B"]
 		}
 	},
 	"198": {
 		"name": "Soldierman",
-		"class": {
+		"classes": {
 			"C": ["F", "G", "P", "B", "M"]
 		}
 	},
 	"199": {
 		"name": "Ashuraman(D)",
-		"class": {
+		"classes": {
 			"A": ["P", "S"],
 			"B": ["R", "O", "M"],
 			"C": ["F", "G", "B"]
@@ -1422,143 +1422,143 @@
 	},
 	"200": {
 		"name": "Terryman(E)",
-		"class": {
+		"classes": {
 			"C": ["F", "G", "P", "B", "M"]
 		}
 	},
 	"201": {
 		"name": "King the Tons(B)",
-		"class": {
+		"classes": {
 			"C": ["F", "G", "P", "B", "M"]
 		}
 	},
 	"202": {
 		"name": "Strongman",
-		"class": {
+		"classes": {
 			"C": ["F", "G", "P", "B", "M"]
 		}
 	},
 	"203": {
 		"name": "Cannon Baller",
-		"class": {
+		"classes": {
 			"C": ["F", "G", "P", "B", "M"]
 		}
 	},
 	"204": {
 		"name": "Sunigator(E)",
-		"class": {
+		"classes": {
 			"C": ["F", "G", "P", "S", "O", "M"]
 		}
 	},
 	"205": {
 		"name": "Powerfulman",
-		"class": {
+		"classes": {
 			"C": ["F", "G", "P", "B", "M"]
 		}
 	},
 	"206": {
 		"name": "Kinnikuman(I)",
-		"class": {
+		"classes": {
 			"B": ["R", "S", "O", "M"],
 			"C": ["F", "P", "B"]
 		}
 	},
 	"207": {
 		"name": "Satan Prince",
-		"class": {
+		"classes": {
 			"C": ["F", "G", "P", "S", "O", "M"]
 		}
 	},
 	"208": {
 		"name": "Dickieman",
-		"class": {
+		"classes": {
 			"B": ["S", "O", "M"],
 			"C": ["F", "P", "B"]
 		}
 	},
 	"209": {
 		"name": "Mixer Taite(B)",
-		"class": {
+		"classes": {
 			"C": ["F", "R", "S", "B", "L", "M"]
 		}
 	},
 	"210": {
 		"name": "Kinnikuman Soldier(B)",
-		"class": {
+		"classes": {
 			"B": ["R", "S", "O", "M"],
 			"C": ["F", "P", "B"]
 		}
 	},
 	"211": {
 		"name": "Buffaloman(E)",
-		"class": {
+		"classes": {
 			"B": ["O"],
 			"C": ["F", "G", "B", "M"]
 		}
 	},
 	"212": {
 		"name": "Parthenon",
-		"class": {
+		"classes": {
 			"C": ["F", "R", "S", "B", "L", "M"]
 		}
 	},
 	"213": {
 		"name": "Kinnikuman Big Body(B)",
-		"class": {
+		"classes": {
 			"B": ["R", "S", "O", "M"],
 			"C": ["F", "P", "B"]
 		}
 	},
 	"214": {
 		"name": "Robin Mask(F)",
-		"class": {
+		"classes": {
 			"C": ["F", "R", "S", "B", "L", "M"]
 		}
 	},
 	"215": {
 		"name": "Bikeman",
-		"class": {
+		"classes": {
 			"B": ["B", "O", "M"],
 			"C": ["F", "G"]
 		}
 	},
 	"216": {
 		"name": "The Ninja(C)",
-		"class": {
+		"classes": {
 			"B": ["O", "M"],
 			"C": ["F", "G", "B"]
 		}
 	},
 	"217": {
 		"name": "Kinnikuman Mariposa(B)",
-		"class": {
+		"classes": {
 			"B": ["S", "O", "M"],
 			"C": ["F", "R", "P", "B"]
 		}
 	},
 	"218": {
 		"name": "Warsman(C)",
-		"class": {
+		"classes": {
 			"C": ["F", "R", "S", "B", "L", "M"]
 		}
 	},
 	"219": {
 		"name": "Kinnikuman Zebra(B)",
-		"class": {
+		"classes": {
 			"B": ["O", "M"],
 			"C": ["F", "R", "P", "S", "B"]
 		}
 	},
 	"220": {
 		"name": "Devil Magician",
-		"class": {
+		"classes": {
 			"B": ["P", "S", "B"],
 			"C": ["F", "R", "G", "L"]
 		}
 	},
 	"221": {
 		"name": "New Sunshine",
-		"class": {
+		"classes": {
 			"A": ["B"],
 			"B": ["G", "O"],
 			"C": ["F", "P", "S", "M"]
@@ -1566,13 +1566,13 @@
 	},
 	"222": {
 		"name": "Kinnikuman(J)",
-		"class": {
+		"classes": {
 			"C": ["F", "G", "P", "L", "M"]
 		}
 	},
 	"223": {
 		"name": "Mr. Barracuda(B)",
-		"class": {
+		"classes": {
 			"A": ["B"],
 			"B": ["G", "O", "M"],
 			"C": ["F", "P", "S"]
@@ -1580,7 +1580,7 @@
 	},
 	"224": {
 		"name": "New Black Hole",
-		"class": {
+		"classes": {
 			"A": ["B"],
 			"B": ["G", "M"],
 			"C": ["F", "P", "S", "O"]
@@ -1588,26 +1588,26 @@
 	},
 	"225": {
 		"name": "Robin Mask(E)",
-		"class": {
+		"classes": {
 			"B": ["G", "B"],
 			"C": ["F", "O", "M"]
 		}
 	},
 	"226": {
 		"name": "Ramenman(B)",
-		"class": {
+		"classes": {
 			"C": ["F", "R", "G", "P", "L"]
 		}
 	},
 	"227": {
 		"name": "Kinnikuman Great(B)",
-		"class": {
+		"classes": {
 			"C": ["F", "G", "P", "L", "M"]
 		}
 	},
 	"228": {
 		"name": "The Ninja(D)",
-		"class": {
+		"classes": {
 			"A": ["B"],
 			"B": ["G", "O", "M"],
 			"C": ["F", "P", "S"]
@@ -1615,20 +1615,20 @@
 	},
 	"229": {
 		"name": "Kinnikuman Super Phoenix(B)",
-		"class": {
+		"classes": {
 			"B": ["R", "S", "B", "O", "M"],
 			"C": ["F", "P"]
 		}
 	},
 	"230": {
 		"name": "Kendaman(A)",
-		"class": {
+		"classes": {
 			"C": ["F", "R", "G", "P", "L"]
 		}
 	},
 	"231": {
 		"name": "Warsman(D)",
-		"class": {
+		"classes": {
 			"A": ["B"],
 			"B": ["G", "O", "M"],
 			"C": ["F", "P", "S"]
@@ -1636,32 +1636,32 @@
 	},
 	"232": {
 		"name": "Turboman",
-		"class": {
+		"classes": {
 			"A": ["S"],
 			"C": ["F", "G", "P", "B", "L", "O"]
 		}
 	},
 	"233": {
 		"name": "Godofon Eric",
-		"class": {
+		"classes": {
 			"C": ["F", "P", "S", "B", "L"]
 		}
 	},
 	"234": {
 		"name": "MuscleMan",
-		"class": {
+		"classes": {
 			"C": ["F"]
 		}
 	},
 	"235": {
 		"name": "Terri-Bull",
-		"class": {
+		"classes": {
 			"C": ["F", "G"]
 		}
 	},
 	"236": {
 		"name": "Satan Cross",
-		"class": {
+		"classes": {
 			"C": ["F"]
 		}
 	}

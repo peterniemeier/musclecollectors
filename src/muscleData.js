@@ -242,8 +242,8 @@ const muscleData = {
 	"34": {
 		"name": "Nokogira Man",
 		"classes": {
-			"B": ["S"],
-			"C": ["F", "R", "P", "O"]
+			"B": ["P", "LB"],
+			"C": ["F", "S", "B", "O", "M"]
 		}
 	},
 	"35": {
@@ -258,7 +258,7 @@ const muscleData = {
 		"name": "Kinkotsuman",
 		"classes": {
 			"A": ["L"],
-			"B": ["G", "S", "O", "M"],
+			"B": ["P", "G", "S", "O", "M"],
 			"C": ["F", "R"]
 		}
 	},
