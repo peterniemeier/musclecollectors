@@ -242,7 +242,7 @@ const muscleData = {
 	"34": {
 		"name": "Nokogira Man",
 		"classes": {
-			"B": ["P", "LB"],
+			"B": ["P", "L"],
 			"C": ["F", "S", "B", "O", "M"]
 		}
 	},
