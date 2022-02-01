@@ -1473,7 +1473,7 @@ const muscleData = {
 		"name": "Dickieman",
 		"classes": {
 			"B": ["S", "O", "M"],
-			"C": ["F", "P", "B"]
+			"C": ["F", "P", "B","R"]
 		}
 	},
 	"209": {
