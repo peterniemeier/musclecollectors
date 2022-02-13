@@ -554,7 +554,7 @@ const muscleData = {
 		"name": "Ashuraman no Sensei",
 		"classes": {
 			"A": ["P", "S"],
-			"B": ["G", "S", "M"],
+			"B": ["G", "O", "M"],
 			"C": ["F", "R", "B"]
 		}
 	},
