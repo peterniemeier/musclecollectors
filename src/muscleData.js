@@ -1277,7 +1277,7 @@ const muscleData = {
 		"name": "Black Buffalo",
 		"classes": {
 			"A": ["S", "M"],
-			"C": ["F", "R", "G", "P"]
+			"C": ["F", "R", "G", "P", "O"]
 		}
 	},
 	"180": {
