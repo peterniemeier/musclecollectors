@@ -608,7 +608,7 @@ const muscleData = {
 		"name": "Kinnikuman Zebra(A)",
 		"classes": {
 			"A": ["R", "S"],
-			"B": ["L", "O"],
+			"B": ["G", "L", "O"],
 			"C": ["F", "B", "M"]
 		}
 	},
