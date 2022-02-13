@@ -1198,7 +1198,7 @@ const muscleData = {
 		"name": "Black Rain",
 		"classes": {
 			"A": ["S", "M"],
-			"C": ["F", "R", "G", "P"]
+			"C": ["F", "R", "G", "P", "O"]
 		}
 	},
 	"168": {
